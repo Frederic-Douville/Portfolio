@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/Portfolio/static/js/main.07bda735.js",
+    "main.css": "/Portfolio/static/css/main.83d9dda8.css",
+    "main.js": "/Portfolio/static/js/main.53d45332.js",
+    "static/media/Roboto-Regular.ttf": "/Portfolio/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
+    "static/media/Roboto-Bold.ttf": "/Portfolio/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
+    "static/media/NunitoSans-Bold.ttf": "/Portfolio/static/media/NunitoSans-Bold.f2f18c2e01d2f39c18c9.ttf",
+    "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
     "index.html": "/Portfolio/index.html",
-    "main.e6c13ad2.css.map": "/Portfolio/static/css/main.e6c13ad2.css.map",
-    "main.07bda735.js.map": "/Portfolio/static/js/main.07bda735.js.map"
+    "main.83d9dda8.css.map": "/Portfolio/static/css/main.83d9dda8.css.map",
+    "main.53d45332.js.map": "/Portfolio/static/js/main.53d45332.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.07bda735.js"
+    "static/css/main.83d9dda8.css",
+    "static/js/main.53d45332.js"
   ]
 }

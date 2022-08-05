@@ -1,11 +1,19 @@
 import { Link } from 'react-router-dom';
 function Header() {
     return (
-        <div>
-            <Link to="/">Acceuil</Link>
-            <Link to="/about">A propos</Link>
-            <Link to="/projects">Projets</Link>
-            <Link to="/contact">Contact</Link>
+        <div className="header-ctn d-flex f-d-row j-c-spaceAround a-i-center">
+            <Link to="/" className="header-link">
+                Accueil
+            </Link>
+            <Link to="/about" className="header-link">
+                A propos
+            </Link>
+            <Link to="/projects" className="header-link">
+                Projets
+            </Link>
+            <Link to="/contact" className="header-link">
+                Contact
+            </Link>
         </div>
     );
 }

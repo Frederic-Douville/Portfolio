@@ -1,0 +1,17 @@
+.about{
+    &-ctn{
+        font-size:25px;
+    }
+    &-pitch{
+        width: 700px;
+        text-indent:50px;
+        text-align: justify;
+    }
+    &-CV-link{
+        color: #323b81;
+        cursor: pointer;
+        &:hover{
+            color: blue;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.card{
+    &-ctn{
+    width:200px;
+    height: 200px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+    &-img-ctn{
+        width:180px;
+        height:100px;
+        & img{
+            width:180px;
+        }
+    }
+    &-link-ctn{
+        width:180px;
+    }
+    &-github-icon{
+        width:25px;
+        fill:#323b81;
+    }
+    &-pagelink{
+        text-decoration: none;
+    }
+}

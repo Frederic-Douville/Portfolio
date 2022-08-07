@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.10fcd1ce.css",
-    "main.js": "/Portfolio/static/js/main.973f6a0e.js",
+    "main.css": "/Portfolio/static/css/main.ca9663eb.css",
+    "main.js": "/Portfolio/static/js/main.43e4d96e.js",
     "static/media/CV_Frédéric_Douville.jpg": "/Portfolio/static/media/CV_Frédéric_Douville.1a530a09d1fce09eff0a.jpg",
     "static/media/Roboto-Regular.ttf": "/Portfolio/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Roboto-Bold.ttf": "/Portfolio/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
     "static/media/NunitoSans-Bold.ttf": "/Portfolio/static/media/NunitoSans-Bold.f2f18c2e01d2f39c18c9.ttf",
     "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
+    "static/media/Reservia.svg": "/Portfolio/static/media/Reservia.933d6945c0f505d3e8f84eb27a1d9e9a.svg",
+    "static/media/FisheyeLogo.svg": "/Portfolio/static/media/FisheyeLogo.eb5a4ef045747cee51fdbe8958b87097.svg",
+    "static/media/github-brands.svg": "/Portfolio/static/media/github-brands.0247e1759a8387a8ccf5ad89e42469bb.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/xmark-solid.svg": "/Portfolio/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
-    "main.10fcd1ce.css.map": "/Portfolio/static/css/main.10fcd1ce.css.map",
-    "main.973f6a0e.js.map": "/Portfolio/static/js/main.973f6a0e.js.map"
+    "main.ca9663eb.css.map": "/Portfolio/static/css/main.ca9663eb.css.map",
+    "main.43e4d96e.js.map": "/Portfolio/static/js/main.43e4d96e.js.map"
   },
   "entrypoints": [
-    "static/css/main.10fcd1ce.css",
-    "static/js/main.973f6a0e.js"
+    "static/css/main.ca9663eb.css",
+    "static/js/main.43e4d96e.js"
   ]
 }

@@ -3,6 +3,10 @@ import ReserviaLogo from '../../assets/Reservia.svg';
 import OhMyFoodLogo from '../../assets/ohmyfood.png';
 import GameOnLogo from '../../assets/Gameon.png';
 import FishEyeLogo from '../../assets/FisheyeLogo.svg';
+import LesPetisPlatsLogo from '../../assets/LesPetitsPlats.png';
+import KasaLogo from '../../assets/Kasa.svg';
+import SportSeeLogo from '../../assets/SportSee.png';
+import HRnetLogo from '../../assets/HRnet.jpg';
 
 function Projects() {
     const projectsCardRef = [
@@ -36,6 +40,35 @@ function Projects() {
                 'https://github.com/Frederic-Douville/FredericDouville_6_06092021',
             pagelink:
                 'https://frederic-douville.github.io/FredericDouville_6_06092021/',
+        },
+        {
+            title: 'Les petits plats',
+            image: LesPetisPlatsLogo,
+            githublink:
+                'https://github.com/Frederic-Douville/FredericDouville_7_16102021',
+            pagelink:
+                'https://frederic-douville.github.io/FredericDouville_7_16102021/',
+        },
+        {
+            title: 'Kasa',
+            image: KasaLogo,
+            githublink:
+                'https://github.com/Frederic-Douville/FredericDouville_11_25012022',
+            pagelink: '',
+        },
+        {
+            title: 'SportSee',
+            image: SportSeeLogo,
+            githublink:
+                'https://github.com/Frederic-Douville/FredericDouville_12_22022022',
+            pagelink: '',
+        },
+        {
+            title: 'HRnet',
+            image: HRnetLogo,
+            githublink:
+                'https://github.com/Frederic-Douville/FredericDouville_14_26042022',
+            pagelink: 'https://frolicking-cat-dfe967.netlify.app/',
         },
     ];
     return (

@@ -1,12 +1,12 @@
 import Card from '../../components/card';
-import ReserviaLogo from '../../assets/Reservia.svg';
-import OhMyFoodLogo from '../../assets/ohmyfood.png';
-import GameOnLogo from '../../assets/Gameon.png';
-import FishEyeLogo from '../../assets/FisheyeLogo.svg';
-import LesPetisPlatsLogo from '../../assets/LesPetitsPlats.png';
-import KasaLogo from '../../assets/Kasa.svg';
-import SportSeeLogo from '../../assets/SportSee.png';
-import HRnetLogo from '../../assets/HRnet.jpg';
+import ReserviaLogo from '../../assets/logos/Reservia.svg';
+import OhMyFoodLogo from '../../assets/logos/ohmyfood.png';
+import GameOnLogo from '../../assets/logos/Gameon.png';
+import FishEyeLogo from '../../assets/logos/FisheyeLogo.svg';
+import LesPetisPlatsLogo from '../../assets/logos/LesPetitsPlats.png';
+import KasaLogo from '../../assets/logos/Kasa.svg';
+import SportSeeLogo from '../../assets/logos/SportSee.png';
+import HRnetLogo from '../../assets/logos/HRnet.jpg';
 
 function Projects() {
     const projectsCardRef = [

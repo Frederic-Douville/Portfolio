@@ -18,13 +18,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position:relative;
+  
 }
 
 #root {
   font-family:'Nunito-Regular';
-  width: 75%;
-  height: 720px;
-  margin:auto;
+  width: 100%;
+  height: auto;
+  background-image: url('../assets/striped-wood-texture.jpg');
+  background-size:cover;
 }
 
 .page{

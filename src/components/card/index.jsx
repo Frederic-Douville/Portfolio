@@ -1,4 +1,4 @@
-import GithubIcon from '../../assets/github-brands.svg';
+import GithubIcon from '../../assets/icones_svg/github-brands.svg';
 
 function Card({ title, image, githubLink, pageLink }) {
     return (

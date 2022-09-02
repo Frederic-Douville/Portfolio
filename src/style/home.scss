@@ -1,7 +1,8 @@
 .home{
     &-h1{
-        color: #323b81;
+        font-family: 'RubikDirt-Regular';
         font-size: 36px;
+        font-weight: 500;
         margin-block-start: 0.4em;
         margin-block-end: 0.4em;
     }
@@ -9,6 +10,7 @@
         font-size: 30px;
         margin-block-start: 0.3em;
         margin-block-end: 0.3em;
+        color: #4d75b0;
     }
     &-pitch{
         font-size:25px;

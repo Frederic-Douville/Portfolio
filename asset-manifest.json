@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2345dfe3.css",
-    "main.js": "/Portfolio/static/js/main.ac429ad5.js",
+    "main.css": "/Portfolio/static/css/main.f7b90a7f.css",
+    "main.js": "/Portfolio/static/js/main.d641e7af.js",
+    "static/media/striped-wood-texture.jpg": "/Portfolio/static/media/striped-wood-texture.682515b6524f4197845a.jpg",
+    "static/media/RubikDirt-Regular.ttf": "/Portfolio/static/media/RubikDirt-Regular.7c2e9501e6fa6713b659.ttf",
     "static/media/CV_Frédéric_Douville.jpg": "/Portfolio/static/media/CV_Frédéric_Douville.1a530a09d1fce09eff0a.jpg",
-    "static/media/Roboto-Regular.ttf": "/Portfolio/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
-    "static/media/Roboto-Bold.ttf": "/Portfolio/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
     "static/media/NunitoSans-Bold.ttf": "/Portfolio/static/media/NunitoSans-Bold.f2f18c2e01d2f39c18c9.ttf",
     "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
+    "static/media/three_bars.svg": "/Portfolio/static/media/three_bars.f2807469c83592c9f4c6d27b255333c7.svg",
+    "static/media/logo_fd.svg": "/Portfolio/static/media/logo_fd.f8b15892bc062ba9df82592da48fe349.svg",
     "static/media/HRnet.jpg": "/Portfolio/static/media/HRnet.550a61bba16a38a1d91d.jpg",
     "static/media/Reservia.svg": "/Portfolio/static/media/Reservia.933d6945c0f505d3e8f84eb27a1d9e9a.svg",
     "static/media/SportSee.png": "/Portfolio/static/media/SportSee.337e8febecea24c0c4b1.png",
     "static/media/LesPetitsPlats.png": "/Portfolio/static/media/LesPetitsPlats.ca7d0942dc990b181ed9.png",
     "static/media/FisheyeLogo.svg": "/Portfolio/static/media/FisheyeLogo.eb5a4ef045747cee51fdbe8958b87097.svg",
     "static/media/Kasa.svg": "/Portfolio/static/media/Kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
-    "static/media/github-brands.svg": "/Portfolio/static/media/github-brands.0247e1759a8387a8ccf5ad89e42469bb.svg",
+    "static/media/github-brands.svg": "/Portfolio/static/media/github-brands.022db3ae71b7f7388d8a9835ca7fded2.svg",
+    "static/media/instagram-brands.svg": "/Portfolio/static/media/instagram-brands.65a7cdea349fc8978609db0c5ac7e005.svg",
     "index.html": "/Portfolio/index.html",
+    "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
     "static/media/xmark-solid.svg": "/Portfolio/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
-    "main.2345dfe3.css.map": "/Portfolio/static/css/main.2345dfe3.css.map",
-    "main.ac429ad5.js.map": "/Portfolio/static/js/main.ac429ad5.js.map"
+    "main.f7b90a7f.css.map": "/Portfolio/static/css/main.f7b90a7f.css.map",
+    "main.d641e7af.js.map": "/Portfolio/static/js/main.d641e7af.js.map"
   },
   "entrypoints": [
-    "static/css/main.2345dfe3.css",
-    "static/js/main.ac429ad5.js"
+    "static/css/main.f7b90a7f.css",
+    "static/js/main.d641e7af.js"
   ]
 }

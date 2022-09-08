@@ -1,4 +1,13 @@
 .home{
+    &-ctn{
+        width:100%;
+    }
+    &-intro-ctn{
+        width:45%;
+    }
+    &-img-ctn{
+        width:45%;
+    }
     &-h1{
         font-family: 'RubikDirt-Regular';
         font-size: 36px;
@@ -14,7 +23,28 @@
     }
     &-pitch{
         font-size:25px;
-        width: 550px;
+        width: 90%;
         text-align: justify;
+    }
+    &-portrait{
+        width:80%;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:1023px){
+    .home{
+        &-ctn{
+            flex-direction: column;
+            
+        }
+        &-intro-ctn{
+            width:90%;
+            margin-top: 155px;
+        }
+        &-img-ctn{
+            width:90%;
+            margin-bottom: 50px;
+        }
     }
 }

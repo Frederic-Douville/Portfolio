@@ -76,7 +76,7 @@ function Projects() {
             {projectsCardRef.map(
                 ({ index, title, image, githublink, pagelink }) => (
                     <Card
-                        key={`key-${index}`}
+                        key={`${title}-${index}`}
                         title={title}
                         image={image}
                         githubLink={githublink}

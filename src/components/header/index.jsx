@@ -21,6 +21,10 @@ function Header() {
         return setDropIsOpen(!dropIsOpen);
     }
 
+    function closeDropDownMenu() {
+        return setDropIsOpen(false);
+    }
+
     return (
         <div className="header-ctn d-flex f-d-row j-c-spaceBetween a-i-center">
             <Link to="/">
@@ -92,12 +96,20 @@ function Header() {
                     <nav className="nav-ctn-mobile d-flex f-d-column a-i-center j-c-flexStart">
                         <ul className="nav-list nav-list-mobile d-flex f-d-column a-i-center j-c-center">
                             <li className="nav-elem-mobile">
-                                <Link to="/" className="nav-link-mobile">
+                                <Link
+                                    to="/"
+                                    className="nav-link-mobile"
+                                    onClick={closeDropDownMenu}
+                                >
                                     Accueil
                                 </Link>
                             </li>
                             <li className="nav-elem-mobile">
-                                <Link to="/about" className="nav-link-mobile">
+                                <Link
+                                    to="/about"
+                                    className="nav-link-mobile"
+                                    onClick={closeDropDownMenu}
+                                >
                                     A propos de moi
                                 </Link>
                             </li>
@@ -105,12 +117,17 @@ function Header() {
                                 <Link
                                     to="/projects"
                                     className="nav-link-mobile"
+                                    onClick={closeDropDownMenu}
                                 >
                                     Projets
                                 </Link>
                             </li>
                             <li className="nav-elem-mobile">
-                                <Link to="/contact" className="nav-link-mobile">
+                                <Link
+                                    to="/contact"
+                                    className="nav-link-mobile"
+                                    onClick={closeDropDownMenu}
+                                >
                                     Contact
                                 </Link>
                             </li>

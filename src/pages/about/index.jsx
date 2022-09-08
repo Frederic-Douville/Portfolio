@@ -5,21 +5,12 @@ import { ReactComponent as Minus } from '../../assets/icones_svg/minus-solid.svg
 import drawingsOne from '../../datas/drawingsOne';
 import drawingsTwo from '../../datas/drawingsTwo';
 import drawingsThree from '../../datas/drawingsThree';
-import { useHref } from 'react-router';
 
 function About() {
     const [storyOne, setStoryOne] = useState(false);
     const [storyTwo, setStoryTwo] = useState(false);
     const [storyThree, setStoryThree] = useState(false);
-    const [windowSizeMobile, setWindowSizeMobile] = useState(false);
-    window.addEventListener('resize', checkWindowSize);
-
-    function checkWindowSize() {
-        const width = window.innerWidth;
-        return width >= 1023
-            ? setWindowSizeMobile(false)
-            : setWindowSizeMobile(true);
-    }
+    const aboutPage = document.getElementById('aboutPage');
 
     function openStoryOne() {
         setStoryOne(!storyOne);
@@ -31,18 +22,23 @@ function About() {
         setStoryOne(false);
         setStoryTwo(!storyTwo);
         setStoryThree(false);
+        aboutPage.scrollIntoView(true);
     }
 
     function openStoryThree() {
         setStoryOne(false);
         setStoryTwo(false);
         setStoryThree(!storyThree);
+        aboutPage.scrollIntoView(true);
     }
 
     return (
-        <div className="page about-ctn d-flex f-d-row j-c-center a-i-center">
+        <div
+            className="page about-ctn d-flex f-d-row j-c-center a-i-center"
+            id="aboutPage"
+        >
             <div className="about-stories-ctn d-flex f-d-column j-c-flexStart a-i-flexStart">
-                <div className="about-line"></div>
+                <div className="about-line" id="firstLine"></div>
                 <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                     <div
                         className="about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center"

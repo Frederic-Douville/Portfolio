@@ -3,7 +3,6 @@ import LogoPs from '../assets/dessins/logo Ps.png';
 import LogoBlender from '../assets/dessins/logo blender.png';
 import LogoInkscape from '../assets/dessins/logo inkscape.png';
 import LogoAi from '../assets/dessins/logo Ai.png';
-import DrawingPen from '../assets/dessins/dessin crayon.png';
 import DrawingTablet from '../assets/dessins/dessin tablette graphique.png';
 
 const drawingsTwo = [
@@ -31,11 +30,6 @@ const drawingsTwo = [
         src: LogoAi,
         alt: 'logo illustrator',
         className: 'drawings logo-two logo-illustrator',
-    },
-    {
-        src: DrawingPen,
-        alt: 'drawing pen',
-        className: 'drawings drawing-pen',
     },
     {
         src: DrawingTablet,

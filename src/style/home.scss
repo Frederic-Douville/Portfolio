@@ -27,7 +27,7 @@
         text-align: justify;
     }
     &-portrait{
-        width:80%;
+        width:70%;
         height:auto;
     }
 }
@@ -45,6 +45,9 @@
         &-img-ctn{
             width:90%;
             margin-bottom: 50px;
+        }
+        &-portrait{
+            width:380px;
         }
     }
 }

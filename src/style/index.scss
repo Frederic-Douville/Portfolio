@@ -27,13 +27,15 @@ body {
   width: 100%;
   min-height: 900px;
   background-image: url('../assets/striped-wood-texture.jpg');
-  background-size:auto;
+  background-size:cover;
 }
 
 .page{
   width:100%;
-  min-height: 800px;
+  min-height: 1050px;
+  height:auto;
   background-image: url('../assets/paper-texture HD.jpg');
   box-shadow: 0 -10px 10px rgba(0,0,0,0.4);
 }
+
 

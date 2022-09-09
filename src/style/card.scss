@@ -1,9 +1,11 @@
 .card{
     &-ctn{
-    width:200px;
-    height: 200px;
-    margin-top: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    width:400px;
+    height: 300px;
+    background-color: white;
+    margin: 10px 0 10px 0;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
     }
     &-img-ctn{
         width:180px;
@@ -13,13 +15,43 @@
         }
     }
     &-link-ctn{
-        width:180px;
+        width:350px;
+        font-size: 20px;
+        font-weight: 600;
     }
-    &-github-icon{
-        width:25px;
-        fill:#323b81;
+    &-githublink{
+        text-decoration: none;
+        color: black;
+        &-icon{
+            width:25px;
+            fill:black;
+        }
+        &-text {
+            margin-left: 10px;
+        }
+        &:hover{
+            color: #4d75b0;
+            .card-githublink-icon{
+                fill: #4d75b0;
+            }           
+        }
     }
+    
     &-pagelink{
         text-decoration: none;
+        color: black;
+        &-icon{
+            width:25px;
+            fill:black;
+        }
+        &-text {
+            margin-left: 10px;
+        }
+        &:hover{
+            color: #4d75b0;
+            .card-pagelink-icon{
+                fill: #4d75b0;
+            }           
+        }
     }
 }

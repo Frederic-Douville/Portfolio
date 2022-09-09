@@ -1,0 +1,18 @@
+.projects{
+    &-ctn{
+        flex-wrap: wrap;
+    }
+    &-mobile-ctn{
+        margin-top: 155px;
+    }
+}
+
+
+
+@media screen and (max-width:1023px) {
+    .projects{
+        &-ctn{
+        
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7eeead7c.css",
-    "main.js": "/Portfolio/static/js/main.bd8d6fad.js",
+    "main.css": "/Portfolio/static/css/main.8ffce38d.css",
+    "main.js": "/Portfolio/static/js/main.f919479b.js",
     "static/media/RubikDirt-Regular.ttf": "/Portfolio/static/media/RubikDirt-Regular.7c2e9501e6fa6713b659.ttf",
     "static/media/striped-wood-texture.jpg": "/Portfolio/static/media/striped-wood-texture.57bde60cbb784aa2c682.jpg",
     "static/media/paper-texture HD.jpg": "/Portfolio/static/media/paper-texture HD.7e5cbad3ba69d07a276b.jpg",
@@ -36,17 +36,18 @@
     "static/media/FisheyeLogo.svg": "/Portfolio/static/media/FisheyeLogo.eb5a4ef045747cee51fdbe8958b87097.svg",
     "static/media/Kasa.svg": "/Portfolio/static/media/Kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
     "static/media/github-brands.svg": "/Portfolio/static/media/github-brands.022db3ae71b7f7388d8a9835ca7fded2.svg",
+    "static/media/globe-solid.svg": "/Portfolio/static/media/globe-solid.847b4937c82d976c2fa58e460afbac19.svg",
     "static/media/instagram-brands.svg": "/Portfolio/static/media/instagram-brands.65a7cdea349fc8978609db0c5ac7e005.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
     "static/media/xmark-solid.svg": "/Portfolio/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.7eeead7c.css.map": "/Portfolio/static/css/main.7eeead7c.css.map",
-    "main.bd8d6fad.js.map": "/Portfolio/static/js/main.bd8d6fad.js.map"
+    "main.8ffce38d.css.map": "/Portfolio/static/css/main.8ffce38d.css.map",
+    "main.f919479b.js.map": "/Portfolio/static/js/main.f919479b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7eeead7c.css",
-    "static/js/main.bd8d6fad.js"
+    "static/css/main.8ffce38d.css",
+    "static/js/main.f919479b.js"
   ]
 }

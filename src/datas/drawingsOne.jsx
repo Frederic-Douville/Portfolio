@@ -1,10 +1,10 @@
-import LogoSass from '../assets/dessins/logo sass.png';
-import LogoReact from '../assets/dessins/logo react.png';
-import LogoRedux from '../assets/dessins/logo redux.png';
-import LogoCss from '../assets/dessins/logo css.png';
-import LogoHtml from '../assets/dessins/logo html.png';
-import LogoJavaScript from '../assets/dessins/logo javascript.png';
-import DrawingPc from '../assets/dessins/dessin pc.png';
+import LogoSass from '../assets/dessins/logo sass.webp';
+import LogoReact from '../assets/dessins/logo react.webp';
+import LogoRedux from '../assets/dessins/logo redux.webp';
+import LogoCss from '../assets/dessins/logo css.webp';
+import LogoHtml from '../assets/dessins/logo html.webp';
+import LogoJavaScript from '../assets/dessins/logo javascript.webp';
+import DrawingPc from '../assets/dessins/dessin pc.webp';
 
 const drawingsOne = [
     {

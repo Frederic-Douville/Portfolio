@@ -1,8 +1,8 @@
-import LogoPython from '../assets/dessins/logo python.png';
-import LogoSciences from '../assets/dessins/logo sciences.png';
-import LogoFreecad from '../assets/dessins/logo freecad.png';
-import DrawingTools from '../assets/dessins/dessin outils.png';
-import Drawing3dprinter from '../assets/dessins/dessin imprimante 3d.png';
+import LogoPython from '../assets/dessins/logo python.webp';
+import LogoSciences from '../assets/dessins/logo sciences.webp';
+import LogoFreecad from '../assets/dessins/logo freecad.webp';
+import DrawingTools from '../assets/dessins/dessin outils.webp';
+import Drawing3dprinter from '../assets/dessins/dessin imprimante 3d.webp';
 
 const drawingsThree = [
     {

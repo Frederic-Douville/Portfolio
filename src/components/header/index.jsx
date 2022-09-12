@@ -26,115 +26,117 @@ function Header() {
     }
 
     return (
-        <div className="header-ctn d-flex f-d-row j-c-spaceBetween a-i-center">
-            <Link to="/">
-                <div className="header-logo-ctn d-flex j-c-center a-i-center">
-                    <LogoHeader className="header-logo-icon" />
-                </div>
-            </Link>
-            <nav className="nav-ctn d-flex f-d-row a-i-center j-c-spaceBetween">
-                <ul className="nav-list nav-list-desktop d-flex f-d-row a-i-center j-c-spaceBetween">
-                    <li className="nav-elem">
-                        <Link to="/" className="nav-link">
-                            Accueil
-                        </Link>
-                    </li>
-                    <li className="nav-elem">
-                        <Link to="/about" className="nav-link">
-                            A propos de moi
-                        </Link>
-                    </li>
-                    <li className="nav-elem">
-                        <Link to="/projects" className="nav-link">
-                            Projets
-                        </Link>
-                    </li>
-                    <li className="nav-elem">
-                        <Link to="/contact" className="nav-link">
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
-                <ul className="nav-list nav-list-icon d-flex f-d-row a-i-center j-c-spaceBetween">
-                    <li className='"nav-elem'>
-                        <a
-                            href="https://github.com/Frederic-Douville"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <GitHubIcon className="nav-elem-icon" />
-                        </a>
-                    </li>
-                    <li className='"nav-elem'>
-                        <a
-                            href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-douville-949217172/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <LinkedInIcon className="nav-elem-icon" />
-                        </a>
-                    </li>
-                    <li className='"nav-elem'>
-                        <a
-                            href="https://www.instagram.com/fredoo_art/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <InstagramIcon className="nav-elem-icon" />
-                        </a>
-                    </li>
-                </ul>
-                <div
-                    className="nav-three-bars-ctn"
-                    onClick={openOrCloseDropDownMenu}
-                >
-                    <ThreeBars className="nav-three-bars-icon" />
-                </div>
-            </nav>
-            {dropIsOpen ? (
-                <div className="header-dropdown-menu-ctn d-flex a-i-center j-c-flexStart">
-                    <nav className="nav-ctn-mobile d-flex f-d-column a-i-center j-c-flexStart">
-                        <ul className="nav-list nav-list-mobile d-flex f-d-column a-i-center j-c-center">
-                            <li className="nav-elem-mobile">
-                                <Link
-                                    to="/"
-                                    className="nav-link-mobile"
-                                    onClick={closeDropDownMenu}
-                                >
-                                    Accueil
-                                </Link>
-                            </li>
-                            <li className="nav-elem-mobile">
-                                <Link
-                                    to="/about"
-                                    className="nav-link-mobile"
-                                    onClick={closeDropDownMenu}
-                                >
-                                    A propos de moi
-                                </Link>
-                            </li>
-                            <li className="nav-elem-mobile">
-                                <Link
-                                    to="/projects"
-                                    className="nav-link-mobile"
-                                    onClick={closeDropDownMenu}
-                                >
-                                    Projets
-                                </Link>
-                            </li>
-                            <li className="nav-elem-mobile">
-                                <Link
-                                    to="/contact"
-                                    className="nav-link-mobile"
-                                    onClick={closeDropDownMenu}
-                                >
-                                    Contact
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            ) : null}
+        <div className="header-main d-flex f-d-row j-c-center a-i-center">
+            <div className="header-ctn d-flex f-d-row j-c-spaceBetween a-i-center">
+                <Link to="/">
+                    <div className="header-logo-ctn d-flex j-c-center a-i-center">
+                        <LogoHeader className="header-logo-icon" />
+                    </div>
+                </Link>
+                <nav className="nav-ctn d-flex f-d-row a-i-center j-c-spaceBetween">
+                    <ul className="nav-list nav-list-desktop d-flex f-d-row a-i-center j-c-spaceBetween">
+                        <li className="nav-elem">
+                            <Link to="/" className="nav-link">
+                                Accueil
+                            </Link>
+                        </li>
+                        <li className="nav-elem">
+                            <Link to="/about" className="nav-link">
+                                A propos de moi
+                            </Link>
+                        </li>
+                        <li className="nav-elem">
+                            <Link to="/projects" className="nav-link">
+                                Projets
+                            </Link>
+                        </li>
+                        <li className="nav-elem">
+                            <Link to="/contact" className="nav-link">
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className="nav-list nav-list-icon d-flex f-d-row a-i-center j-c-spaceBetween">
+                        <li className='"nav-elem'>
+                            <a
+                                href="https://github.com/Frederic-Douville"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <GitHubIcon className="nav-elem-icon" />
+                            </a>
+                        </li>
+                        <li className='"nav-elem'>
+                            <a
+                                href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-douville-949217172/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <LinkedInIcon className="nav-elem-icon" />
+                            </a>
+                        </li>
+                        <li className='"nav-elem'>
+                            <a
+                                href="https://www.instagram.com/fredoo_art/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <InstagramIcon className="nav-elem-icon" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div
+                        className="nav-three-bars-ctn"
+                        onClick={openOrCloseDropDownMenu}
+                    >
+                        <ThreeBars className="nav-three-bars-icon" />
+                    </div>
+                </nav>
+                {dropIsOpen ? (
+                    <div className="header-dropdown-menu-ctn d-flex a-i-center j-c-flexStart">
+                        <nav className="nav-ctn-mobile d-flex f-d-column a-i-center j-c-flexStart">
+                            <ul className="nav-list nav-list-mobile d-flex f-d-column a-i-center j-c-center">
+                                <li className="nav-elem-mobile">
+                                    <Link
+                                        to="/"
+                                        className="nav-link-mobile"
+                                        onClick={closeDropDownMenu}
+                                    >
+                                        Accueil
+                                    </Link>
+                                </li>
+                                <li className="nav-elem-mobile">
+                                    <Link
+                                        to="/about"
+                                        className="nav-link-mobile"
+                                        onClick={closeDropDownMenu}
+                                    >
+                                        A propos de moi
+                                    </Link>
+                                </li>
+                                <li className="nav-elem-mobile">
+                                    <Link
+                                        to="/projects"
+                                        className="nav-link-mobile"
+                                        onClick={closeDropDownMenu}
+                                    >
+                                        Projets
+                                    </Link>
+                                </li>
+                                <li className="nav-elem-mobile">
+                                    <Link
+                                        to="/contact"
+                                        className="nav-link-mobile"
+                                        onClick={closeDropDownMenu}
+                                    >
+                                        Contact
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                ) : null}
+            </div>
         </div>
     );
 }

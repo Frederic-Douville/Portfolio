@@ -1,9 +1,13 @@
 .home{
     &-ctn{
-        width:100%;
+        width:70%;
+        margin:auto;
     }
     &-intro-ctn{
         width:45%;
+    }
+    &-titles-ctn{
+        width:90%;
     }
     &-img-ctn{
         width:45%;
@@ -28,26 +32,41 @@
     }
     &-portrait{
         width:62.5%;
+        min-width: 450px;
         height:auto;
     }
+}
+
+@media screen and (max-width:1400px){
+    .home{
+        &-ctn{
+            width:100%
+        }
+    } 
 }
 
 @media screen and (max-width:1023px){
     .home{
         &-ctn{
-            flex-direction: column;
-            
+            width:100%;
+            flex-direction: column;            
         }
         &-intro-ctn{
             width:90%;
             margin-top: 155px;
+        }
+        &-titles-ctn{
+            width:100%;
+            justify-content: center;
         }
         &-img-ctn{
             width:90%;
             margin-bottom: 50px;
         }
         &-portrait{
-            width:380px;
+            width:80%;
+            min-width:100px;
+            max-width:350px;
         }
     }
 }

@@ -1,27 +1,31 @@
 .card{
     &-ctn{
-    width:400px;
-    height: 300px;
-    background-color: white;
-    margin: 10px 0 10px 0;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    border-radius: 15px;
+        width:90%;
+        max-width:340px;
+        height: 300px;
+        background-color: white;
+        margin: 10px 0 10px 0;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        border-radius: 15px;
     }
     &-img-ctn{
-        width:180px;
+        width:70%;
+        max-width:180px;
         height:150px;
         & img{
-            width:180px;
+            width:100%;
         }
     }
     &-link-ctn{
-        width:350px;
+        width:90%;
+        max-width:350px;
         font-size: 20px;
         font-weight: 600;
     }
     &-githublink{
         text-decoration: none;
         color: black;
+        margin: 5px 0 5px 0;
         &-icon{
             width:25px;
             fill:black;
@@ -40,6 +44,7 @@
     &-pagelink{
         text-decoration: none;
         color: black;
+        margin: 5px 0 5px 0;
         &-icon{
             width:25px;
             fill:black;

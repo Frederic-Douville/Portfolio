@@ -1,9 +1,9 @@
-import LogoKrita from '../assets/dessins/logo krita.png';
-import LogoPs from '../assets/dessins/logo Ps.png';
-import LogoBlender from '../assets/dessins/logo blender.png';
-import LogoInkscape from '../assets/dessins/logo inkscape.png';
-import LogoAi from '../assets/dessins/logo Ai.png';
-import DrawingTablet from '../assets/dessins/dessin tablette graphique.png';
+import LogoKrita from '../assets/dessins/logo krita.webp';
+import LogoPs from '../assets/dessins/logo Ps.webp';
+import LogoBlender from '../assets/dessins/logo blender.webp';
+import LogoInkscape from '../assets/dessins/logo inkscape.webp';
+import LogoAi from '../assets/dessins/logo Ai.webp';
+import DrawingTablet from '../assets/dessins/dessin tablette graphique.webp';
 
 const drawingsTwo = [
     {

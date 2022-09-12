@@ -7,7 +7,7 @@ function Card({ title, image, githubLink, pageLink }) {
             <div className="card-img-ctn d-flex j-c-center a-i-center">
                 <img src={image} alt={`logo-${title}`} />
             </div>
-            <div className="card-link-ctn d-flex a-i-center j-c-spaceAround">
+            <div className="card-link-ctn d-flex f-d-column a-i-center j-c-spaceAround">
                 <a
                     href={githubLink}
                     className="card-githublink d-flex a-i-center "

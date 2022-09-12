@@ -1,20 +1,28 @@
 .header{
+    &-main{
+        width:100%;
+        height: 150px;        
+        background-image: url('../assets/wood texture header.webp');
+        background-size:cover;
+        box-shadow:inset 0 -5px 5px rgba(0,0,0,0.4);
+    }
     &-ctn{
-    width: 100%;
+    width: 70%;
     height: 150px;
+    margin: auto;
     font-family: 'RubikDirt-Regular';
-    position:relative;
+    position:relative;    
     }
     &-logo{
         &-ctn{
-            width:70px;
-            height:70px;
+            width:100px;
+            height:100px;
             margin-left: 10px;
             border-radius: 50%;        
         }
         &-icon{
-            width:65px;
-            height:65px;
+            width:100px;
+            height:100px;
             fill:black;        
             &:hover{
                 fill:#4d75b0;
@@ -33,7 +41,8 @@
 
 .nav{
     &-ctn{
-        width:900px;
+        width:80%;
+        max-width:900px;
         &-mobile{
             width:100%;
         }
@@ -100,11 +109,32 @@
     }
 }
 
+@media screen and (max-width:1400px){
+    .header{
+        &-ctn{
+            width:100%
+        }
+    } 
+}
 
-@media screen and (max-width:1023px){    
+@media screen and (max-width:1023px){  
+    .header{
+        &-logo{
+            &-ctn{
+                width:65px;
+                height:65px;
+                margin-left: 10px;     
+            }
+            &-icon{
+                width:65px;
+                height:65px;
+            }
+        }
+    } 
     .nav{
         &-ctn{
-            width:300px;
+            width:75%;
+            max-width:300px;
             justify-content:flex-end;
         }
         &-list{
@@ -112,8 +142,8 @@
                 display: none;
             }
             &-icon{
-                margin-right: 50px;
-                min-width:225px;
+                margin-right: 25px;
+                width:60%;
             }
         }
         &-three-bars-icon{

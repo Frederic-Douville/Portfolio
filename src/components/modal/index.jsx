@@ -1,4 +1,4 @@
-import Cross from '../../assets/xmark-solid.svg';
+import Cross from '../../assets/icones_svg/xmark-solid.svg';
 import CV from '../../assets/CV_Frédéric_Douville.jpg';
 
 function Modal({ functionBtn }) {

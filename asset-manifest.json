@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3a3c76c9.css",
-    "main.js": "/Portfolio/static/js/main.5dd051dc.js",
+    "main.css": "/Portfolio/static/css/main.990d5d94.css",
+    "main.js": "/Portfolio/static/js/main.ee6bca0d.js",
     "static/media/wood texture header.webp": "/Portfolio/static/media/wood texture header.e182a1678c72f923d732.webp",
     "static/media/RubikDirt-Regular.ttf": "/Portfolio/static/media/RubikDirt-Regular.7c2e9501e6fa6713b659.ttf",
     "static/media/paper-texture HD.webp": "/Portfolio/static/media/paper-texture HD.bc0a54f11a861de19b7b.webp",
@@ -11,6 +11,7 @@
     "static/media/CV_Frédéric_Douville.jpg": "/Portfolio/static/media/CV_Frédéric_Douville.1a530a09d1fce09eff0a.jpg",
     "static/media/NunitoSans-Bold.ttf": "/Portfolio/static/media/NunitoSans-Bold.f2f18c2e01d2f39c18c9.ttf",
     "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
+    "static/media/brush line thin.svg": "/Portfolio/static/media/brush line thin.e07d2e47acc0f3bf31a69c2087827620.svg",
     "static/media/three_bars.svg": "/Portfolio/static/media/three_bars.f2807469c83592c9f4c6d27b255333c7.svg",
     "static/media/dessin imprimante 3d.webp": "/Portfolio/static/media/dessin imprimante 3d.87a8ebf4ea44d2d25b4b.webp",
     "static/media/logo_fd.svg": "/Portfolio/static/media/logo_fd.f8b15892bc062ba9df82592da48fe349.svg",
@@ -28,6 +29,7 @@
     "static/media/logo sciences.webp": "/Portfolio/static/media/logo sciences.4cf44cb5f2f72ecd4d3b.webp",
     "static/media/logo freecad.webp": "/Portfolio/static/media/logo freecad.d8caf997d8b61134f59f.webp",
     "static/media/logo python.webp": "/Portfolio/static/media/logo python.a5682ddf3893d43fba83.webp",
+    "static/media/argent bank.png": "/Portfolio/static/media/argent bank.cd14e12558a2de8f26b0.png",
     "static/media/logo blender.webp": "/Portfolio/static/media/logo blender.597976be739668413b90.webp",
     "static/media/logo inkscape.webp": "/Portfolio/static/media/logo inkscape.93ed7e769d105c5cf686.webp",
     "static/media/Reservia.svg": "/Portfolio/static/media/Reservia.933d6945c0f505d3e8f84eb27a1d9e9a.svg",
@@ -43,11 +45,11 @@
     "static/media/xmark-solid.svg": "/Portfolio/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.3a3c76c9.css.map": "/Portfolio/static/css/main.3a3c76c9.css.map",
-    "main.5dd051dc.js.map": "/Portfolio/static/js/main.5dd051dc.js.map"
+    "main.990d5d94.css.map": "/Portfolio/static/css/main.990d5d94.css.map",
+    "main.ee6bca0d.js.map": "/Portfolio/static/js/main.ee6bca0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a3c76c9.css",
-    "static/js/main.5dd051dc.js"
+    "static/css/main.990d5d94.css",
+    "static/js/main.ee6bca0d.js"
   ]
 }

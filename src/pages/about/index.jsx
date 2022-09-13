@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PrintDrawings from '../../components/print-drawings';
 import { ReactComponent as Plus } from '../../assets/icones_svg/plus-solid.svg';
 import { ReactComponent as Minus } from '../../assets/icones_svg/minus-solid.svg';
+import { ReactComponent as BrushLine } from '../../assets/icones_svg/brush line thin.svg';
 import drawingsOne from '../../datas/drawingsOne';
 import drawingsTwo from '../../datas/drawingsTwo';
 import drawingsThree from '../../datas/drawingsThree';
@@ -10,7 +11,6 @@ function About() {
     const [storyOne, setStoryOne] = useState(true);
     const [storyTwo, setStoryTwo] = useState(false);
     const [storyThree, setStoryThree] = useState(false);
-    //const width = window.innerWidth;
     const firstLine = document.getElementById('firstLine');
 
     function openStoryOne() {
@@ -38,7 +38,8 @@ function About() {
         <div className="page d-flex f-d-row j-c-center a-i-center">
             <div className="about-ctn d-flex f-d-row j-c-center a-i-center">
                 <div className="about-stories-ctn d-flex f-d-column a-i-flexStart">
-                    <div className="about-line" id="firstLine"></div>
+                    <BrushLine className="about-line" id="firstLine" />
+
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
                             className="about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center"
@@ -77,7 +78,7 @@ function About() {
                             </div>
                         ) : null}
                     </div>
-                    <div className="about-line"></div>
+                    <BrushLine className="about-line" />
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
                             className="about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center"
@@ -116,7 +117,7 @@ function About() {
                             </div>
                         ) : null}
                     </div>
-                    <div className="about-line"></div>
+                    <BrushLine className="about-line" />
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
                             className="about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center"
@@ -156,7 +157,7 @@ function About() {
                             </div>
                         ) : null}
                     </div>
-                    <div className="about-line"></div>
+                    <BrushLine className="about-line" />
                 </div>
                 <div className="about-img-ctn">
                     {storyOne ? (

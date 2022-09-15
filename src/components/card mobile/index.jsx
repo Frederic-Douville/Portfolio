@@ -1,32 +1,51 @@
 import { ReactComponent as GithubIcon } from '../../assets/icones_svg/github-brands.svg';
 import { ReactComponent as GlobeIcon } from '../../assets/icones_svg/globe-solid.svg';
 
-function CardMobile({ title, image, githubLink, pageLink }) {
+function CardMobile({ datasArray }) {
     return (
-        <div className="cardMobile-ctn d-flex f-d-column j-c-center a-i-center">
-            <div className="cardMobile-img-ctn d-flex j-c-center a-i-center">
-                <img src={image} alt={`logo-${title}`} />
-            </div>
-            <div className="cardMobile-link-ctn d-flex f-d-column a-i-center j-c-spaceAround">
-                <a
-                    href={githubLink}
-                    className="cardMobile-githublink d-flex a-i-center "
-                >
-                    <GithubIcon className="cardMobile-githublink-icon" />
-                    <span className="cardMobile-githublink-text">
-                        Repository
-                    </span>
-                </a>
-                <a
-                    href={pageLink}
-                    className="cardMobile-pagelink d-flex a-i-center"
-                >
-                    <GlobeIcon className="cardMobile-pagelink-icon" />
-                    <span className="cardMobile-pagelink-text">
-                        Visiter le site
-                    </span>
-                </a>
-            </div>
+        <div className="cardMobile-main-ctn d-flex f-d-column a-i-center j-c-flexStart">
+            {datasArray.map(
+                ({
+                    index,
+                    title,
+                    image,
+                    description,
+                    githublink,
+                    pagelink,
+                }) => (
+                    <div
+                        key={`mobile-${title}-${index}`}
+                        className="cardMobile-ctn d-flex f-d-column j-c-spaceAround a-i-center"
+                    >
+                        <div className="cardMobile-img-ctn d-flex j-c-center a-i-center">
+                            <img src={image} alt={`logo-${title}`} />
+                        </div>
+                        <p className="cardMobile-desc">{description}</p>
+                        <div className="cardMobile-link-ctn d-flex f-d-column a-i-center j-c-spaceAround">
+                            <a
+                                href={githublink}
+                                className="cardMobile-link cardMobile-githublink d-flex a-i-center "
+                            >
+                                <GithubIcon className="cardMobile-link-icon cardMobile-githublink-icon" />
+                                <span className="cardMobile-link-text">
+                                    Repository
+                                </span>
+                            </a>
+                            {pagelink !== '' ? (
+                                <a
+                                    href={pagelink}
+                                    className="cardMobile-link cardMobile-pagelink d-flex a-i-center"
+                                >
+                                    <GlobeIcon className="cardMobile-link-icon cardMobile-pagelink-icon" />
+                                    <span className="cardMobile-link-text">
+                                        Visiter le site
+                                    </span>
+                                </a>
+                            ) : null}
+                        </div>
+                    </div>
+                )
+            )}
         </div>
     );
 }

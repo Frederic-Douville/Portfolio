@@ -1,8 +1,12 @@
 .cardMobile{
+    &-main-ctn{
+        margin-top: 155px;
+        width:90%;
+    }
     &-ctn{
         width:90%;
         max-width:340px;
-        height: 300px;
+        height: 450px;
         background-color: white;
         margin: 10px 0 10px 0;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -11,10 +15,13 @@
     &-img-ctn{
         width:70%;
         max-width:180px;
-        height:150px;
         & img{
             width:100%;
         }
+    }
+    &-desc{
+        width:80%;
+        text-align: justify;
     }
     &-link-ctn{
         width:90%;
@@ -22,41 +29,36 @@
         font-size: 20px;
         font-weight: 600;
     }
-    &-githublink{
+    &-link{
         text-decoration: none;
         color: black;
-        margin: 5px 0 5px 0;
+        margin: 10px 0 10px 0;
         &-icon{
             width:25px;
             fill:black;
         }
         &-text {
             margin-left: 10px;
-        }
-        &:hover{
-            color: #4d75b0;
-            .card-githublink-icon{
-                fill: #4d75b0;
-            }           
         }
     }
+    &-githublink:hover{
+        color: #4d75b0;
+        .cardMobile-githublink-icon{
+            fill: #4d75b0;
+        }       
+    }
     
-    &-pagelink{
-        text-decoration: none;
-        color: black;
-        margin: 5px 0 5px 0;
-        &-icon{
-            width:25px;
-            fill:black;
-        }
-        &-text {
-            margin-left: 10px;
-        }
-        &:hover{
-            color: #4d75b0;
-            .card-pagelink-icon{
-                fill: #4d75b0;
-            }           
+    &-pagelink:hover{
+        color: #4d75b0;
+        .cardMobile-pagelink-icon{
+            fill: #4d75b0;
+        }   
+    }
+}
+@media screen and (min-width:1023px) {
+    .cardMobile{
+        &-main-ctn{
+            display: none;
         }
     }
 }

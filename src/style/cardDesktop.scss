@@ -1,20 +1,24 @@
 .cardDesktop{
-    &-main{
-        width:100%;
+    &-ctn{
+        width:70%;
+        margin-top: 180px;
     }
     &-cards{
         &-ctn{
             width:50%;
-            flex-wrap: wrap;
-            gap:25px;
-            width:100%;
-            min-height: 700px;            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            min-height: 700px;
+            height:700px;            
         }  
     }
       
     &-card{
-        width:200px;
-        height: 200px;
+        width:90%;
+        height: 90%;
+        justify-self: center;
+        align-self: center;
         background-color: white;
         box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
         border-radius: 15px;
@@ -27,7 +31,7 @@
             .cardDesktop-card-img{
                 width:90%;
             }
-        }
+        }        
     }
     &-desc{
         &-ctn{
@@ -45,31 +49,33 @@
                 margin-left:10px;
             }
         }
+        &-languagesCtn{
+            width:100%;
+            flex-wrap: wrap;
+        }
+        &-languages{
+            width:100px;
+            height:auto;
+            margin-left: 20px;
+        }
         &-link-ctn{
             width:100%;
         }
-    }
-    &-githublink{
-        text-decoration: none;
-        color: black;
-        margin: 5px 0 5px 0;
-        &-icon{
-            width:30px;
-            fill:black;
-        }
-        &-text {
-            font-size: 28px;
-            margin-left: 10px;
-        }
-        &:hover{
-            color: #4d75b0;
-            .cardDesktop-githublink-icon{
-                fill: #4d75b0;
-            }           
+        &-pitch{
+            &-ctn{
+                width:80%;
+            }
+            &-p{
+                font-size:30px;
+                text-align: justify;
+                & span{
+                    font-weight: bolder;
+                } 
+            }
         }
     }
     
-    &-pagelink{
+    &-link{
         text-decoration: none;
         color: black;
         margin: 5px 0 5px 0;
@@ -81,19 +87,25 @@
             font-size: 28px;
             margin-left: 10px;
         }
-        &:hover{
+    }
+    &-githublink:hover{       
+            color: #4d75b0;
+            .cardDesktop-githublink-icon{
+                fill: #4d75b0;
+            }       
+    }
+    
+    &-pagelink:hover{
             color: #4d75b0;
             .cardDesktop-pagelink-icon{
                 fill: #4d75b0;
             }           
         }
-    }
-
 }
 
 @media screen and (max-width:1400px){
     .cardDesktop{
-        &-main{
+        &-ctn{
             width:100%;
         }
         &-cards-ctn{            
@@ -103,5 +115,13 @@
             width:45%;            
         }
         
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .cardDesktop{
+        &-ctn{
+            display: none;
+        }
     }
 }

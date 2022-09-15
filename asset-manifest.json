@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.990d5d94.css",
-    "main.js": "/Portfolio/static/js/main.ee6bca0d.js",
+    "main.css": "/Portfolio/static/css/main.f71bb657.css",
+    "main.js": "/Portfolio/static/js/main.f84398f3.js",
     "static/media/wood texture header.webp": "/Portfolio/static/media/wood texture header.e182a1678c72f923d732.webp",
     "static/media/RubikDirt-Regular.ttf": "/Portfolio/static/media/RubikDirt-Regular.7c2e9501e6fa6713b659.ttf",
     "static/media/paper-texture HD.webp": "/Portfolio/static/media/paper-texture HD.bc0a54f11a861de19b7b.webp",
@@ -24,19 +24,21 @@
     "static/media/logo redux.webp": "/Portfolio/static/media/logo redux.6b3397dea39e3f994cb7.webp",
     "static/media/logo Ai.webp": "/Portfolio/static/media/logo Ai.2ccc38c52400e61d5a74.webp",
     "static/media/logo Ps.webp": "/Portfolio/static/media/logo Ps.393e476da0f616db9736.webp",
+    "static/media/HRnet.webp": "/Portfolio/static/media/HRnet.4bd46e19ed3d7afc61c7.webp",
     "static/media/logo krita.webp": "/Portfolio/static/media/logo krita.43c916649897d516f593.webp",
-    "static/media/HRnet.jpg": "/Portfolio/static/media/HRnet.550a61bba16a38a1d91d.jpg",
     "static/media/logo sciences.webp": "/Portfolio/static/media/logo sciences.4cf44cb5f2f72ecd4d3b.webp",
     "static/media/logo freecad.webp": "/Portfolio/static/media/logo freecad.d8caf997d8b61134f59f.webp",
     "static/media/logo python.webp": "/Portfolio/static/media/logo python.a5682ddf3893d43fba83.webp",
-    "static/media/argent bank.png": "/Portfolio/static/media/argent bank.cd14e12558a2de8f26b0.png",
     "static/media/logo blender.webp": "/Portfolio/static/media/logo blender.597976be739668413b90.webp",
     "static/media/logo inkscape.webp": "/Portfolio/static/media/logo inkscape.93ed7e769d105c5cf686.webp",
-    "static/media/Reservia.svg": "/Portfolio/static/media/Reservia.933d6945c0f505d3e8f84eb27a1d9e9a.svg",
-    "static/media/SportSee.png": "/Portfolio/static/media/SportSee.337e8febecea24c0c4b1.png",
-    "static/media/LesPetitsPlats.png": "/Portfolio/static/media/LesPetitsPlats.ca7d0942dc990b181ed9.png",
-    "static/media/FisheyeLogo.svg": "/Portfolio/static/media/FisheyeLogo.eb5a4ef045747cee51fdbe8958b87097.svg",
-    "static/media/Kasa.svg": "/Portfolio/static/media/Kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/Argent bank.webp": "/Portfolio/static/media/Argent bank.4e1fcc4b49448c35e181.webp",
+    "static/media/SportSee.webp": "/Portfolio/static/media/SportSee.ed02177768bccda564f9.webp",
+    "static/media/LesPetitsPlats.webp": "/Portfolio/static/media/LesPetitsPlats.028e72ad4af7d52658d7.webp",
+    "static/media/Reservia.webp": "/Portfolio/static/media/Reservia.34b61b4dacdb139e6ad5.webp",
+    "static/media/Gameon.webp": "/Portfolio/static/media/Gameon.bfa9b4e8c710897d701a.webp",
+    "static/media/Ohmyfood.webp": "/Portfolio/static/media/Ohmyfood.457754d36091c8973c21.webp",
+    "static/media/Fisheye.webp": "/Portfolio/static/media/Fisheye.8d53365bb3e613dbd521.webp",
+    "static/media/Kasa.webp": "/Portfolio/static/media/Kasa.133aa17b3bfe83e322ff.webp",
     "static/media/github-brands.svg": "/Portfolio/static/media/github-brands.022db3ae71b7f7388d8a9835ca7fded2.svg",
     "static/media/globe-solid.svg": "/Portfolio/static/media/globe-solid.847b4937c82d976c2fa58e460afbac19.svg",
     "static/media/instagram-brands.svg": "/Portfolio/static/media/instagram-brands.65a7cdea349fc8978609db0c5ac7e005.svg",
@@ -45,11 +47,11 @@
     "static/media/xmark-solid.svg": "/Portfolio/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.990d5d94.css.map": "/Portfolio/static/css/main.990d5d94.css.map",
-    "main.ee6bca0d.js.map": "/Portfolio/static/js/main.ee6bca0d.js.map"
+    "main.f71bb657.css.map": "/Portfolio/static/css/main.f71bb657.css.map",
+    "main.f84398f3.js.map": "/Portfolio/static/js/main.f84398f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.990d5d94.css",
-    "static/js/main.ee6bca0d.js"
+    "static/css/main.f71bb657.css",
+    "static/js/main.f84398f3.js"
   ]
 }

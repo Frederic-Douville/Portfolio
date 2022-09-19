@@ -1,5 +1,15 @@
+import { Link } from 'react-router-dom';
+
 function Error() {
-    return <div>Erreur 404</div>;
+    return (
+        <div className="error-ctn page d-flex f-d-column j-c-flexStart a-i-center">
+            <span className="error-nbr">404</span>
+            <span className="error-pitch">Cette page n'existe pas !</span>
+            <Link to="/" className="error-link">
+                Retour à l'accueil
+            </Link>
+        </div>
+    );
 }
 
 export default Error;

@@ -1,5 +1,58 @@
 .contact{
     &-ctn{
-        font-size: 25px;
+        width:70%;
+        margin-top: 155px;
+        
+    }
+    &-pitch{
+        &-ctn{
+            font-size: 30px;
+        }
+        &-text{
+            text-align: center;
+        }
+        &-link{
+            text-decoration: none;
+            color: #4d75b0;
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+    }
+    &-drawing{
+        &-ctn{
+            width:100%;
+            margin-top: 25px;
+        }        
+        &-mail{
+            transform: rotate(-10deg);
+        }
+        &-linkedin{
+            transform: rotate(10deg)
+        }
     }
 }
+
+@media screen and (max-width:1400px){
+    .contact{
+        &-ctn{
+            width:100%
+        }
+    } 
+}
+
+@media screen and (max-width:1023px){
+    .contact{
+        &-pitch{
+            &-ctn{
+                font-size: 25px;
+            }
+        }
+        &-drawing{
+            &-ctn{
+                flex-direction: column;
+                height:520px;
+            }
+        }
+    }
+} 

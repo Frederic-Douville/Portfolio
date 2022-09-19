@@ -23,9 +23,11 @@
         &-icon{
             width:100px;
             height:100px;
-            fill:black;        
+            fill:black;
+            transition: transform ease-in-out 300ms, fill ease-in-out 300ms;        
             &:hover{
                 fill:#4d75b0;
+                transform: rotate(360deg);
             }
         }
     }
@@ -70,8 +72,10 @@
             width:30px;
             height:30px;
             fill:black;
+            transition: transform ease-in-out 300ms, fill ease-in-out 300ms;
             &:hover{
                 fill:#4d75b0;
+                transform:scale(1.15);
             }
         }
         &-mobile{
@@ -80,17 +84,31 @@
             height:35px ;          
         }
     }
+    &-elem{
+        transition:transform ease-in-out 300ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &-mobile{
+            transition:transform ease-in-out 300ms;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
     &-link{
         color:black;
         text-decoration: none;
         font-size: 25px;
+        transition: color ease-in-out 300ms;
         &:hover{
-            color: #4d75b0
+            color: #4d75b0;
         }
         &-mobile{
             color:black;
             text-decoration: none;
             font-size: 25px;
+            transition: color ease-in-out 300ms;
             &:hover{
                 color: #4d75b0
             }
@@ -103,8 +121,10 @@
         display:none;
         cursor:pointer;
         margin-right: 15px;
+        transition:transform ease-in-out 300ms, fill ease-in-out 300ms;
         &:hover{
             fill:#4d75b0;
+            transform: scale(1.15);
         }
     }
 }

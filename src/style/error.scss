@@ -1,0 +1,37 @@
+.error{
+    &-ctn{
+
+    }
+    &-nbr{
+        margin: 155px 0 50px 0;
+        font-family: 'RubikDirt-Regular';
+        font-size: 150px;
+    }
+    &-pitch{
+        font-size: 40px;
+        text-align: center;
+    }
+    &-link{
+        margin-top: 50px;
+        font-size: 40px;
+        text-decoration: none;
+        color: #4d75b0;
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+}
+
+@media screen and (max-width:1023px){
+    .error{
+        &-nbr{
+            font-size:100px;
+        }
+        &-pitch{
+            font-size:30px;
+        }
+        &-link{
+            font-size: 30px;
+        }
+    }
+} 

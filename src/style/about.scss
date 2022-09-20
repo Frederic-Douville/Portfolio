@@ -6,7 +6,8 @@
     &-stories-ctn{
        width:50%;
        min-height:700px;
-       justify-content: space-between;   
+       justify-content: space-between; 
+       animation:openAllDesc 2s both;  
     }
     &-img-ctn{
         width:50%;
@@ -15,6 +16,7 @@
     &-img-mobile{
         width:90%;
         margin-bottom: 10px;
+        animation: openImgMobile  2s both
     }    
     &-line{
         width:80%;
@@ -31,19 +33,41 @@
                 font-family: 'RubikDirt-Regular';
                 font-size:25px;
                 cursor: pointer;
-            }
+                    &-notopen{
+                        transition: transform ease-in-out 300ms;
+                        &:hover{
+                            transform: translateX(5px);
+                            .about-story-icon{
+                                fill:#4d75b0;
+                            }
+                            .about-story-title{
+                                color:#4d75b0;                        
+                            }
+                        }
+                    }
+                }
+                
             &-paragraphe{
                 width:80%;
                 font-size: 22px;
                 min-width: 420px;
+                animation: openDesc 2s both
             }
         }
         &-icon{
             width:25px;
             margin: 0 10px 0 10px;
+            transition: fill ease-in-out 300ms;
+            &-minus{
+                fill:#4d75b0;
+            }
         }
         &-title{
             min-width:377px;
+            transition: color ease-in-out 300ms;
+            &-open{
+                color:#4d75b0;
+            }
         }
         &-desc{
             width:100%;
@@ -52,6 +76,45 @@
         }
     }    
 }
+@keyframes openAllDesc {
+    0%{
+        opacity: 0;
+        translate: -30px 0px;
+    }
+    90%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+        translate: 0px 0px;
+    }
+}
+@keyframes openDesc {
+    0%{
+        opacity:0;    
+    }
+    90%{
+        opacity:0.9;
+    }
+    100%{
+        opacity: 1;   
+    } 
+}
+
+@keyframes openImgMobile {
+    0%{
+        opacity:0;
+        scale:0.8;     
+    }
+    90%{
+        opacity:0.9;
+    }
+    100%{
+        scale:1;
+        opacity: 1;     
+    } 
+}
+
 
 @media screen and (max-width:1400px){
     .about{

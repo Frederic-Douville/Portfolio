@@ -8,6 +8,10 @@ function CardDesktop({ datasArray }) {
 
     function printCardDescription(event) {
         var id = event.target.getAttribute('data-id');
+        const descCtn = document.getElementById('project-desc');
+        descCtn.classList.remove('desc-animation');
+        void descCtn.offsetWidth;
+        descCtn.classList.add('desc-animation');
         setProjectId(id);
     }
     return (
@@ -29,8 +33,10 @@ function CardDesktop({ datasArray }) {
                     </div>
                 ))}
             </div>
-
-            <div className="cardDesktop-desc-ctn d-flex f-d-column j-c-spaceBetween a-i-center">
+            <div
+                className="cardDesktop-desc-ctn desc-animation d-flex f-d-column j-c-spaceBetween a-i-center"
+                id={`project-desc`}
+            >
                 <div className="cardDesktop-desc-title-ctn d-flex f-d-column j-c-spaceBetween a-i-center">
                     <h1 className="cardDesktop-desc-title-h1">
                         {datasArray[projectId - 1].title}

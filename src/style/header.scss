@@ -15,19 +15,21 @@
     }
     &-logo{
         &-ctn{
-            width:100px;
-            height:100px;
+            width:110px;
+            height:110px;
             margin-left: 10px;
-            border-radius: 50%;        
+            border-radius: 50%;
+            
+                 
         }
         &-icon{
-            width:100px;
-            height:100px;
+            width:95px;
+            height:95px;
             fill:black;
-            transition: transform ease-in-out 300ms, fill ease-in-out 300ms;        
+            transition: transform ease-in-out 300ms, fill ease-in-out 300ms;
             &:hover{
-                fill:#4d75b0;
-                transform: rotate(360deg);
+                fill:#344e76;
+                transform:  scale(1.1) ;
             }
         }
     }
@@ -37,7 +39,21 @@
         right:0px;
         width:100%;
         height: 140px;
-        
+        animation: dropMenuTranslation 1s both;
+    }
+}
+
+@keyframes dropMenuTranslation{
+    0%{
+        opacity:0;
+        translate: 0px -10px
+    }
+    90%{
+        opacity:0.9;
+    }
+    100%{
+        opacity: 1;
+        translate: 0px 0px;
     }
 }
 
@@ -68,32 +84,20 @@
         }        
     }
     &-elem{
-        &-icon{
-            width:30px;
-            height:30px;
-            fill:black;
-            transition: transform ease-in-out 300ms, fill ease-in-out 300ms;
-            &:hover{
-                fill:#4d75b0;
-                transform:scale(1.15);
-            }
-        }
-        &-mobile{
-            text-align: center;
-            width:100%;
-            height:35px ;          
-        }
-    }
-    &-elem{
-        transition:transform ease-in-out 300ms;
-        &:hover{
-            transform: scale(1.1);
-        }
-        &-mobile{
+        &-desktop{
             transition:transform ease-in-out 300ms;
             &:hover{
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
+        }
+        
+        &-mobile{
+            text-align: center;
+            height:35px ;
+            transition:transform ease-in-out 300ms;
+                &:hover{
+                    transform: scale(1.05);
+                }          
         }
     }
     &-link{
@@ -102,16 +106,17 @@
         font-size: 25px;
         transition: color ease-in-out 300ms;
         &:hover{
-            color: #4d75b0;
+            color: #344e76;
         }
-        &-mobile{
-            color:black;
-            text-decoration: none;
-            font-size: 25px;
-            transition: color ease-in-out 300ms;
-            &:hover{
-                color: #4d75b0
-            }
+    }
+    &-icon{
+        width:30px;
+        height:30px;
+        fill:black;
+        transition: transform ease-in-out 300ms, fill ease-in-out 300ms;
+        &:hover{
+            fill:#344e76;
+            transform:scale(1.2);
         }
     }
     &-three-bars-icon{
@@ -123,8 +128,8 @@
         margin-right: 15px;
         transition:transform ease-in-out 300ms, fill ease-in-out 300ms;
         &:hover{
-            fill:#4d75b0;
-            transform: scale(1.15);
+            fill:#344e76;
+            transform: scale(1.05);
         }
     }
 }
@@ -141,13 +146,16 @@
     .header{
         &-logo{
             &-ctn{
-                width:65px;
-                height:65px;
-                margin-left: 10px;     
+                width:80px;
+                height:80px;
+                margin-left: 10px;    
             }
             &-icon{
                 width:65px;
                 height:65px;
+                &:hover{
+                    transform: scale(1.15);
+                }
             }
         }
     } 

@@ -3,6 +3,7 @@
         display:grid;        
         width:100%;
         min-height: 700px ;
+        animation: openCtn 2s both;
     }    
     &-one{
         grid-template-columns: repeat(3,1fr);
@@ -16,6 +17,20 @@
         grid-template-columns: repeat(4,1fr);
         grid-template-rows:repeat(4,1fr);
     }
+}
+
+@keyframes openCtn {
+    0%{
+        opacity:0;
+        scale:0.8;     
+    }
+    90%{
+        opacity:0.9;
+    }
+    100%{
+        scale:1;
+        opacity: 1;     
+    } 
 }
 
 .logo{

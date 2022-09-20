@@ -28,60 +28,60 @@ function Header() {
     return (
         <div className="header-main d-flex f-d-row j-c-center a-i-center">
             <div className="header-ctn d-flex f-d-row j-c-spaceBetween a-i-center">
-                <Link to="/">
+                <a href="https://Frederic-Douville.github.io/Portfolio">
                     <div className="header-logo-ctn d-flex j-c-center a-i-center">
                         <LogoHeader className="header-logo-icon" />
                     </div>
-                </Link>
+                </a>
                 <nav className="nav-ctn d-flex f-d-row a-i-center j-c-spaceBetween">
                     <ul className="nav-list nav-list-desktop d-flex f-d-row a-i-center j-c-spaceBetween">
-                        <li className="nav-elem">
+                        <li className="nav-elem-desktop">
                             <Link to="/" className="nav-link">
                                 Accueil
                             </Link>
                         </li>
-                        <li className="nav-elem">
+                        <li className="nav-elem-desktop">
                             <Link to="/about" className="nav-link">
                                 A propos de moi
                             </Link>
                         </li>
-                        <li className="nav-elem">
+                        <li className="nav-elem-desktop">
                             <Link to="/projects" className="nav-link">
                                 Projets
                             </Link>
                         </li>
-                        <li className="nav-elem">
+                        <li className="nav-elem-desktop">
                             <Link to="/contact" className="nav-link">
                                 Contact
                             </Link>
                         </li>
                     </ul>
                     <ul className="nav-list nav-list-icon d-flex f-d-row a-i-center j-c-spaceBetween">
-                        <li className='"nav-elem'>
+                        <li className="nav-elem-icon">
                             <a
                                 href="https://github.com/Frederic-Douville"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <GitHubIcon className="nav-elem-icon" />
+                                <GitHubIcon className="nav-icon" />
                             </a>
                         </li>
-                        <li className='"nav-elem'>
+                        <li className="nav-elem-icon">
                             <a
                                 href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-douville-949217172/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <LinkedInIcon className="nav-elem-icon" />
+                                <LinkedInIcon className="nav-icon" />
                             </a>
                         </li>
-                        <li className='"nav-elem'>
+                        <li className="nav-elem-icon">
                             <a
                                 href="https://www.instagram.com/fredoo_art/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <InstagramIcon className="nav-elem-icon" />
+                                <InstagramIcon className="nav-icon" />
                             </a>
                         </li>
                     </ul>
@@ -99,7 +99,7 @@ function Header() {
                                 <li className="nav-elem-mobile">
                                     <Link
                                         to="/"
-                                        className="nav-link-mobile"
+                                        className="nav-link nav-link-mobile"
                                         onClick={closeDropDownMenu}
                                     >
                                         Accueil
@@ -108,7 +108,7 @@ function Header() {
                                 <li className="nav-elem-mobile">
                                     <Link
                                         to="/about"
-                                        className="nav-link-mobile"
+                                        className="nav-link nav-link-mobile"
                                         onClick={closeDropDownMenu}
                                     >
                                         A propos de moi
@@ -117,7 +117,7 @@ function Header() {
                                 <li className="nav-elem-mobile">
                                     <Link
                                         to="/projects"
-                                        className="nav-link-mobile"
+                                        className="nav-link nav-link-mobile"
                                         onClick={closeDropDownMenu}
                                     >
                                         Projets
@@ -126,7 +126,7 @@ function Header() {
                                 <li className="nav-elem-mobile">
                                     <Link
                                         to="/contact"
-                                        className="nav-link-mobile"
+                                        className="nav-link nav-link-mobile"
                                         onClick={closeDropDownMenu}
                                     >
                                         Contact

@@ -5,12 +5,14 @@
     }
     &-intro-ctn{
         width:45%;
+        animation:openHomeIntro 2s both;
     }
     &-titles-ctn{
         width:90%;
     }
     &-img-ctn{
         width:45%;
+        animation:openHomePortrait 2s both;
     }
     &-h1{
         font-family: 'RubikDirt-Regular';
@@ -34,6 +36,34 @@
         width:62.5%;
         min-width: 450px;
         height:auto;
+    }
+}
+
+@keyframes openHomeIntro {
+    0%{
+        opacity: 0;
+        translate: -30px 0px;
+    }
+    90%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+        translate: 0px 0px;
+    }
+}
+
+@keyframes openHomePortrait {
+    0%{
+        opacity: 0;
+        translate: 30px 0px;
+    }
+    90%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+        translate: 0px 0px;
     }
 }
 

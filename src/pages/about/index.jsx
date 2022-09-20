@@ -17,21 +17,21 @@ function About() {
         setStoryOne(true);
         setStoryTwo(false);
         setStoryThree(false);
-        firstLine.scrollIntoView(true);
+        firstLine?.scrollIntoView(true);
     }
 
     function openStoryTwo() {
         setStoryOne(false);
         setStoryTwo(true);
         setStoryThree(false);
-        firstLine.scrollIntoView(true);
+        firstLine?.scrollIntoView(true);
     }
 
     function openStoryThree() {
         setStoryOne(false);
         setStoryTwo(false);
         setStoryThree(true);
-        firstLine.scrollIntoView(true);
+        firstLine?.scrollIntoView(true);
     }
 
     return (
@@ -42,16 +42,22 @@ function About() {
 
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
-                            className="about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center"
+                            className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
+                                !storyOne ? 'about-story-ctn-title-notopen' : ''
+                            }`}
                             onClick={openStoryOne}
                         >
                             {storyOne ? (
-                                <Minus className="about-story-icon" />
+                                <Minus className="about-story-icon about-story-icon-minus" />
                             ) : (
                                 <Plus className="about-story-icon" />
                             )}
 
-                            <span className="about-story-title">
+                            <span
+                                className={`about-story-title ${
+                                    storyOne ? 'about-story-title-open' : ''
+                                }`}
+                            >
                                 Developpement Web
                             </span>
                         </div>
@@ -81,16 +87,22 @@ function About() {
                     <BrushLine className="about-line" />
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
-                            className="about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center"
+                            className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
+                                !storyTwo ? 'about-story-ctn-title-notopen' : ''
+                            }`}
                             onClick={openStoryTwo}
                         >
                             {storyTwo ? (
-                                <Minus className="about-story-icon" />
+                                <Minus className="about-story-icon about-story-icon-minus" />
                             ) : (
                                 <Plus className="about-story-icon" />
                             )}
 
-                            <span className="about-story-title">
+                            <span
+                                className={`about-story-title ${
+                                    storyTwo ? 'about-story-title-open' : ''
+                                }`}
+                            >
                                 Art, Dessin & digital painting
                             </span>
                         </div>
@@ -120,16 +132,24 @@ function About() {
                     <BrushLine className="about-line" />
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
-                            className="about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center"
+                            className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
+                                !storyThree
+                                    ? 'about-story-ctn-title-notopen'
+                                    : ''
+                            }`}
                             onClick={openStoryThree}
                         >
                             {storyThree ? (
-                                <Minus className="about-story-icon" />
+                                <Minus className="about-story-icon about-story-icon-minus" />
                             ) : (
                                 <Plus className="about-story-icon" />
                             )}
 
-                            <span className="about-story-title">
+                            <span
+                                className={`about-story-title ${
+                                    storyThree ? 'about-story-title-open' : ''
+                                }`}
+                            >
                                 Sciences, Technologies & DIY
                             </span>
                         </div>

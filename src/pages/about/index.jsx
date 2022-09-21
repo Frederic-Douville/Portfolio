@@ -11,34 +11,34 @@ function About() {
     const [storyOne, setStoryOne] = useState(true);
     const [storyTwo, setStoryTwo] = useState(false);
     const [storyThree, setStoryThree] = useState(false);
-    const firstLine = document.getElementById('firstLine');
 
     function openStoryOne() {
         setStoryOne(true);
         setStoryTwo(false);
         setStoryThree(false);
-        firstLine?.scrollIntoView(true);
+        document.getElementById('firstLine').scrollIntoView(true);
     }
 
     function openStoryTwo() {
         setStoryOne(false);
         setStoryTwo(true);
         setStoryThree(false);
-        firstLine?.scrollIntoView(true);
+        document.getElementById('firstLine').scrollIntoView(true);
     }
 
     function openStoryThree() {
         setStoryOne(false);
         setStoryTwo(false);
         setStoryThree(true);
-        firstLine?.scrollIntoView(true);
+        document.getElementById('firstLine').scrollIntoView(true);
     }
 
     return (
         <div className="page d-flex f-d-row j-c-center a-i-center">
             <div className="about-ctn d-flex f-d-row j-c-center a-i-center">
                 <div className="about-stories-ctn d-flex f-d-column a-i-flexStart">
-                    <BrushLine className="about-line" id="firstLine" />
+                    <div id="firstLine"></div>
+                    <BrushLine className="about-line" />
 
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div

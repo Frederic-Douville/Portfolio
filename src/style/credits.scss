@@ -1,0 +1,32 @@
+.credits{
+    &-ctn{
+        margin-top:155px;
+        height:300px;
+        animation: openCredits 2s both;
+    }
+    &-link{
+        text-decoration: none;
+        text-align:center ;
+        color:$grey-medium;
+        font-family: 'Nunito-Regular';
+        font-size: 26px;
+        transition:transform ease-in-out 300ms;
+        &:hover{
+            color:$blue-medium;
+            transform: scale(1.05);
+        }
+    }
+}
+
+@keyframes openCredits {
+    0%{
+        opacity:0;
+        scale:0.8;     
+    }
+    50%{
+        opacity:1;
+    }    
+    100%{
+        scale:1;     
+    } 
+}

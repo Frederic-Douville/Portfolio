@@ -1,4 +1,5 @@
 @import './font.scss';
+@import './variables.scss';
 @import './displayFlex.scss';
 @import './header.scss';
 @import './footer.scss';
@@ -11,6 +12,8 @@
 @import './cardDesktop.scss';
 @import './drawings.scss';
 @import './error.scss';
+@import './cv.scss';
+@import './credits.scss';
 
 body {
   margin: 0;
@@ -19,24 +22,29 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position:relative;
-  
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 #root {
   font-family:'Nunito-Regular';
   width: 100%;
   min-height: 900px;
-  
+  animation: openRoot 3s both;
 }
 
 .page{
   width:100%;
   min-height: 1050px;
   height:auto;
-  background-image: url('../assets/paper-texture HD.webp');
+  background-image: url('../assets/paper-texture LD.jpg');
   box-shadow: 0 -10px 10px rgba(0,0,0,0.4);
 }
 
-
+@keyframes openRoot {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

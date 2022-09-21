@@ -14,6 +14,7 @@ function CardDesktop({ datasArray }) {
         descCtn.classList.add('desc-animation');
         setProjectId(id);
     }
+    /**essayer avec setTimeout(() => descCtn.classList.add('desc-animation'),0) et enlever void descCtn.offsetWidth */
     return (
         <div className="cardDesktop-ctn d-flex f-d-row j-c-center a-i-flexStart">
             <div className="cardDesktop-cards-ctn ">

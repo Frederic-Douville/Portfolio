@@ -31,11 +31,11 @@
     }
     &-link{
         text-decoration: none;
-        color: black;
+        color: $grey-medium;
         margin: 10px 0 10px 0;
         &-icon{
             width:25px;
-            fill:black;
+            fill:$grey-medium;
             transition: fill ease-in-out 300ms;
         }
         &-text {
@@ -45,10 +45,10 @@
     &-githublink{
         transition: all ease-in-out 300ms;
         &:hover{
-            color: #4d75b0;
+            color: $blue-medium;
             transform: scale(1.05);
             .cardMobile-githublink-icon{
-                fill: #4d75b0;
+                fill: $blue-medium;
             }       
         }
     }
@@ -56,10 +56,10 @@
     &-pagelink{
         transition: all ease-in-out 300ms;
         &:hover{
-            color: #4d75b0;
+            color: $blue-medium;
             transform: scale(1.05);
             .cardMobile-pagelink-icon{
-                fill: #4d75b0;
+                fill: $blue-medium;
             }   
         }
     }

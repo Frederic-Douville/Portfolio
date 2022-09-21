@@ -15,17 +15,20 @@
         animation:openHomePortrait 2s both;
     }
     &-h1{
-        font-family: 'RubikDirt-Regular';
+        font-family: 'Rubik-Bold';
         font-size: 44px;
         font-weight: 500;
         margin-block-start: 0.4em;
         margin-block-end: 0.4em;
+        background: linear-gradient(to right,$grey-medium,$blue-medium);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     &-h2{
         font-size: 38px;
         margin-block-start: 0.3em;
         margin-block-end: 0.3em;
-        color: #4d75b0;
+        color: $blue-medium;
     }
     &-pitch{
         font-size:30px;

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header, Footer, Error } from './components';
-import { About, Contact, Home, Projects } from './pages';
+import { About, Contact, Credits, Cv, Home, Projects } from './pages';
 import './style/index.scss';
 
 //import reportWebVitals from './reportWebVitals';
@@ -17,10 +17,12 @@ root.render(
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/credits" element={<Credits />} />
+                <Route path="/cv" element={<Cv />} />
                 <Route path="*" element={<Error />} />
             </Routes>
+            <Footer />
         </Router>
-        <Footer />
     </React.StrictMode>
 );
 

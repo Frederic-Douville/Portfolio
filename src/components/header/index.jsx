@@ -26,7 +26,10 @@ function Header() {
     }
 
     return (
-        <div className="header-main d-flex f-d-row j-c-center a-i-center">
+        <div
+            className="header-main d-flex f-d-row j-c-center a-i-center"
+            id="header"
+        >
             <div className="header-ctn d-flex f-d-row j-c-spaceBetween a-i-center">
                 <a href="https://Frederic-Douville.github.io/Portfolio">
                     <div className="header-logo-ctn d-flex j-c-center a-i-center">

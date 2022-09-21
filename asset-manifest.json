@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d7096880.css",
-    "main.js": "/Portfolio/static/js/main.74fa032b.js",
-    "static/media/wood texture header.webp": "/Portfolio/static/media/wood texture header.e182a1678c72f923d732.webp",
-    "static/media/RubikDirt-Regular.ttf": "/Portfolio/static/media/RubikDirt-Regular.7c2e9501e6fa6713b659.ttf",
-    "static/media/paper-texture HD.webp": "/Portfolio/static/media/paper-texture HD.bc0a54f11a861de19b7b.webp",
+    "main.css": "/Portfolio/static/css/main.ec481107.css",
+    "main.js": "/Portfolio/static/js/main.d7154bbe.js",
     "static/media/dessin pc.webp": "/Portfolio/static/media/dessin pc.13ad5b7f6b851269f3c6.webp",
     "static/media/dessin selfie.webp": "/Portfolio/static/media/dessin selfie.735c3f99d198c9596abd.webp",
+    "static/media/wood texture header LD.jpg": "/Portfolio/static/media/wood texture header LD.59e1f31d2fb56df15741.jpg",
     "static/media/dessin tablette graphique.webp": "/Portfolio/static/media/dessin tablette graphique.7143cc21645cfebae923.webp",
+    "static/media/paper-texture LD.jpg": "/Portfolio/static/media/paper-texture LD.ff7bd7cf4b897fa3dac2.jpg",
     "static/media/CV_Frédéric_Douville.jpg": "/Portfolio/static/media/CV_Frédéric_Douville.1a530a09d1fce09eff0a.jpg",
     "static/media/NunitoSans-Bold.ttf": "/Portfolio/static/media/NunitoSans-Bold.f2f18c2e01d2f39c18c9.ttf",
     "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
+    "static/media/Rubik-Regular.ttf": "/Portfolio/static/media/Rubik-Regular.974ab100afa4538622da.ttf",
+    "static/media/Rubik-Bold.ttf": "/Portfolio/static/media/Rubik-Bold.12b9f128a901a8977a57.ttf",
     "static/media/brush line thin.svg": "/Portfolio/static/media/brush line thin.e07d2e47acc0f3bf31a69c2087827620.svg",
     "static/media/three_bars.svg": "/Portfolio/static/media/three_bars.f2807469c83592c9f4c6d27b255333c7.svg",
     "static/media/dessin imprimante 3d.webp": "/Portfolio/static/media/dessin imprimante 3d.87a8ebf4ea44d2d25b4b.webp",
-    "static/media/logo_fd.svg": "/Portfolio/static/media/logo_fd.f8b15892bc062ba9df82592da48fe349.svg",
+    "static/media/logo_fd.svg": "/Portfolio/static/media/logo_fd.3f70082af4af07e08c30eeb1b8f1d3d8.svg",
     "static/media/logo html.webp": "/Portfolio/static/media/logo html.bcca518b160b4988923f.webp",
     "static/media/logo react.webp": "/Portfolio/static/media/logo react.11b2f148c1e8136cc836.webp",
     "static/media/logo javascript.webp": "/Portfolio/static/media/logo javascript.a61b7a25ff6b16a7198f.webp",
@@ -49,11 +50,11 @@
     "static/media/xmark-solid.svg": "/Portfolio/static/media/xmark-solid.2bf89dbc0a418449dd02590c7d81e720.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.d7096880.css.map": "/Portfolio/static/css/main.d7096880.css.map",
-    "main.74fa032b.js.map": "/Portfolio/static/js/main.74fa032b.js.map"
+    "main.ec481107.css.map": "/Portfolio/static/css/main.ec481107.css.map",
+    "main.d7154bbe.js.map": "/Portfolio/static/js/main.d7154bbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7096880.css",
-    "static/js/main.74fa032b.js"
+    "static/css/main.ec481107.css",
+    "static/js/main.d7154bbe.js"
   ]
 }

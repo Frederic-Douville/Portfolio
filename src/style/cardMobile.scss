@@ -11,6 +11,7 @@
         margin: 10px 0 10px 0;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
         border-radius: 15px;
+        animation: openCardMobile 2s both;
     }
     &-img-ctn{
         width:70%;
@@ -64,6 +65,20 @@
         }
     }
 }
+
+@keyframes openCardMobile {
+    0%{
+        opacity:0;
+        translate: 0px 50px;
+    }
+    40%{
+        opacity:1;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+
 @media screen and (min-width:1023px) {
     .cardMobile{
         &-main-ctn{

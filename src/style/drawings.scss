@@ -3,7 +3,7 @@
         display:grid;        
         width:100%;
         min-height: 700px ;
-        animation: openCtn 2s both;
+        animation: openCtn 0.8s both;
     }    
     &-one{
         grid-template-columns: repeat(3,1fr);
@@ -21,16 +21,73 @@
 
 @keyframes openCtn {
     0%{
-        opacity:0;
-        scale:0.8;     
-    }
-    90%{
-        opacity:0.9;
+        opacity:0;             
     }
     100%{
-        scale:1;
-        opacity: 1;     
-    } 
+        opacity:1;
+    }
+}
+
+@keyframes openUp{
+    0%{
+        translate: 0px 20px;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+
+@keyframes openDown{
+    0%{
+        translate: 0px -20px;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+
+@keyframes openRotateRightUp {
+    0%{
+        rotate: 10deg;
+        translate: 20px 20px;
+    }
+    100%{
+        rotate: 0deg;
+        translate: 0px 0px;
+    }
+}
+
+@keyframes openRotateRightDown {
+    0%{
+        rotate: 10deg;
+        translate: 20px -20px;
+    }
+    100%{
+        rotate: 0deg;
+        translate: 0px 0px;
+    }
+}
+
+@keyframes openRotateLeftUp {
+    0%{
+        rotate: -10deg;
+        translate: -20px 20px;
+    }
+    100%{
+        rotate: 0deg;
+        translate: 0px 0px;
+    }
+}
+
+@keyframes openRotateLeftDown {
+    0%{
+        rotate: -10deg;
+        translate: -20px -20px;
+    }
+    100%{
+        rotate: 0deg;
+        translate: 0px 0px;
+    }
 }
 
 .logo{
@@ -50,71 +107,85 @@
         width:175px;
         grid-area: 1/1/2/2;
         align-self: flex-end;
-        transform: rotate(-10deg);       
+        transform: rotate(-10deg);
+        animation: openRotateRightUp 2s both;       
     }
     &-react{
         grid-area: 1/2/2/3;
         align-self: flex-start;
+        animation: openUp 2s both; 
     }
     &-redux{
         grid-area: 1/3/2/4;
         align-self: flex-end;
-        transform: rotate(10deg);  
+        transform: rotate(10deg);
+        animation: openRotateLeftUp 2s both;  
     }
     &-css{
         grid-area: 2/1/3/2;
         align-self: flex-end;
-        transform: rotate(-10deg);  
+        transform: rotate(-10deg);
+        animation: openRotateRightDown 2s both;   
     }
     &-html{
         grid-area: 2/2/3/3;
-        align-self: flex-start;       
+        align-self: flex-start;
+        animation: openDown 2s both;       
     }
     &-javascript{
         grid-area: 2/3/3/4;
         align-self: flex-end;
-        transform: rotate(10deg);  
+        transform: rotate(10deg);
+        animation: openRotateLeftDown 2s both;   
     }
     &-krita{
         grid-area: 1/1/2/3;
         align-self: flex-start;
-        transform: rotate(-10deg);          
+        transform: rotate(-10deg);
+        animation: openRotateRightUp 2s both;          
     }
     &-photoshop{
         grid-area: 1/3/2/5;
         align-self: flex-start;
-        transform: rotate(10deg);          
+        transform: rotate(10deg);
+        animation: openRotateLeftUp 2s both;          
     }
     &-blender{
         width:170px;
         grid-area: 2/1/3/3;
         justify-self: flex-start;
         align-self: flex-start;
-        transform: rotate(-10deg); 
+        transform: rotate(-10deg);
+        animation: openRotateRightDown 2s both; 
     }
     &-inkscape{
         grid-area: 1/2/3/4;
         align-self: center;
+        animation: openDown 2s both;
     }
     &-illustrator{
         grid-area: 2/3/3/5;
         justify-self: flex-end;
         align-self: flex-start;
-        transform: rotate(10deg); 
+        transform: rotate(10deg);
+        animation: openRotateLeftDown 2s both; 
     }
     &-python{
         grid-area: 1/1/4/2;
         align-self: center;
         transform: rotate(-10deg);
+        animation: openRotateRightUp 2s both;
     }
     &-sciences{
         width: 250px;
         grid-area: 1/2/2/4;
+        animation: openUp 2s both;
     }
     &-freecad{
         grid-area: 1/4/4/5;
         align-self: center;
         transform: rotate(10deg);
+        animation: openRotateLeftUp 2s both;
     }
 }
 
@@ -124,7 +195,8 @@
         grid-area: 3/1/4/4;
         align-self: center;
         justify-self: center;
-        transform: rotate(10deg);  
+        transform: rotate(10deg);
+        animation: openDown 2s both;  
     }
     &-tablet{
         width:350px;
@@ -132,20 +204,23 @@
         align-self: flex-end;
         justify-self: center;
         transform: rotate(20deg);
+        animation: openDown 2s both;
     }
     &-tools{
         width: 125px;
         grid-area: 3/1/5/3;
         align-self:center;
         justify-self: center;
-        transform: rotate(-20deg);  
+        transform: rotate(-20deg);
+        animation: openRotateRightDown 2s both;  
     }
     &-3dprinter{
         width: 300px;
         grid-area: 3/2/5/5;
         align-self: center;
         justify-self: center;
-        transform: rotate(10deg);  
+        transform: rotate(10deg);
+        animation: openRotateLeftDown 2s both;  
     }
 }
 

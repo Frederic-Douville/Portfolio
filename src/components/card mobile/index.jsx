@@ -24,6 +24,8 @@ function CardMobile({ datasArray }) {
                         <div className="cardMobile-link-ctn d-flex f-d-column a-i-center j-c-spaceAround">
                             <a
                                 href={githublink}
+                                target="_blank"
+                                rel="noreferrer"
                                 className="cardMobile-link cardMobile-githublink d-flex a-i-center "
                             >
                                 <GithubIcon className="cardMobile-link-icon cardMobile-githublink-icon" />
@@ -34,6 +36,8 @@ function CardMobile({ datasArray }) {
                             {pagelink !== '' ? (
                                 <a
                                     href={pagelink}
+                                    target="_blank"
+                                    rel="noreferrer"
                                     className="cardMobile-link cardMobile-pagelink d-flex a-i-center"
                                 >
                                     <GlobeIcon className="cardMobile-link-icon cardMobile-pagelink-icon" />

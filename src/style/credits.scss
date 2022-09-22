@@ -20,12 +20,12 @@
 @keyframes openCredits {
     0%{
         opacity:0;
-        scale:0.8;     
+        translate: 0px 50px;     
     }
-    50%{
+    40%{
         opacity:1;
     }    
     100%{
-        scale:1;     
+        translate: 0px 0px;     
     } 
 }

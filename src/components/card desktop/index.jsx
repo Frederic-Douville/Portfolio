@@ -58,6 +58,8 @@ function CardDesktop({ datasArray }) {
                 <div className="cardDesktop-desc-link-ctn d-flex f-d-row j-c-spaceAround a-i-center">
                     <a
                         href={datasArray[projectId - 1].githublink}
+                        target="_blank"
+                        rel="noreferrer"
                         className="cardDesktop-link cardDesktop-githublink d-flex a-i-center"
                     >
                         <GithubIcon className="cardDesktop-link-icon cardDesktop-githublink-icon" />
@@ -68,6 +70,8 @@ function CardDesktop({ datasArray }) {
                     {datasArray[projectId - 1].pagelink !== '' ? (
                         <a
                             href={datasArray[projectId - 1].pagelink}
+                            target="_blank"
+                            rel="noreferrer"
                             className="cardDesktop-link cardDesktop-pagelink d-flex a-i-center"
                         >
                             <GlobeIcon className="cardDesktop-link-icon cardDesktop-pagelink-icon" />

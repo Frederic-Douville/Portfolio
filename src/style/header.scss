@@ -2,7 +2,7 @@
     &-main{
         width:100%;
         height: 150px;        
-        background-image: url('../assets/wood texture header LD.jpg');
+        background-image: url('../assets/wood-texture-header-LD.webp');
         background-size:cover;
         box-shadow:inset 0 -5px 5px rgba(0,0,0,0.4);
     }
@@ -23,9 +23,10 @@
         &-icon{
             width:95px;
             height:95px;
-            fill:url(#logo-gradient);
-            transition: transform ease-in-out 0.5s;
+            fill:$grey-dark;
+            transition: all ease-in-out 0.5s;
             &:hover{
+                fill:$blue-dark;
                 transform:  scale(1.1);
             }
         }

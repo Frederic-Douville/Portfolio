@@ -29,15 +29,14 @@ body {
   font-family:'Nunito-Regular';
   width: 100%;
   min-height: 900px;
-  animation: openRoot 3s both;
+  //animation: openRoot 3s both;
 }
 
 .page{
   width:100%;
   min-height: 1050px;
   height:auto;
-  //background-image: url('../assets/paper-texture-LD.webp');
-  
+  background-image: url('../assets/paper-texture LD.jpg');
 }
 
 @keyframes openRoot {

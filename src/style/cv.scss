@@ -1,8 +1,58 @@
 .cv{
     &-ctn{
         margin: 155px 0 20px 0;
-        width:100%;
-        overflow: scroll;
+        width:70%;        
+    }
+    &-skillTools-ctn{
+        width:35%;
+        margin-right:15px;        
+    }
+    &-experiencesStudies-ctn{
+        width:55%;
+        margin-left:15px;
+        
+    }
+    &-experiences-h2{
+        margin-top: 0;
+    }
+    &-text{
+        &-bold{
+            font-weight: 600;
+        }
+        &-justify{
+            text-align: justify;
+        }
+        &-blue{
+            color:$blue-medium;
+        }
+        &-size{
+            font-size:20px;
+        }
     }
     
+}
+
+@media screen and (max-width:1400px){
+    .cv{
+        &-ctn{
+            width:100%;
+        }
+    }
+}
+
+@media screen and (max-width:1023px){
+    .cv{
+        &-ctn{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &-skillTools-ctn{
+            width:90%;
+            margin-right:0px;
+        }
+        &-experiencesStudies-ctn{
+            width:90%;
+            margin-left:0px;
+        }
+    }
 }

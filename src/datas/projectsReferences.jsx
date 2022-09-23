@@ -91,7 +91,8 @@ const projectsReferences = [
             "Création d'un formulaire d'inscription avec JavaScript pour une plateforme de gaming.",
         githublink:
             'https://github.com/Frederic-Douville/FredericDouville_4_27062021',
-        pagelink: '',
+        pagelink:
+            'https://frederic-douville.github.io/FredericDouville_4_27062021',
     },
     {
         id: 4,
@@ -184,7 +185,8 @@ const projectsReferences = [
             "Développement d'une application web avec React et React Router pour une plateforme de location d'appartements entre particuliers.",
         githublink:
             'https://github.com/Frederic-Douville/FredericDouville_11_25012022',
-        pagelink: '',
+        pagelink:
+            'https://Frederic-Douville.github.io/FredericDouville_11_25012022',
     },
     {
         id: 7,
@@ -216,7 +218,8 @@ const projectsReferences = [
             "Développement d'un tableau de bord d'analytics avec React pour une application de suivi d'activité sportive.",
         githublink:
             'https://github.com/Frederic-Douville/FredericDouville_12_22022022',
-        pagelink: '',
+        pagelink:
+            'https://Frederic-Douville.github.io/FredericDouville_12_22022022',
     },
     {
         id: 8,
@@ -295,7 +298,8 @@ const projectsReferences = [
             "Mise à niveau vers React et Redux d'une application de gestion des ressources humaines développée en jQuery. ",
         githublink:
             'https://github.com/Frederic-Douville/FredericDouville_14_26042022',
-        pagelink: 'https://frolicking-cat-dfe967.netlify.app/',
+        pagelink:
+            'https://Frederic-Douville.github.io/FredericDouville_14_26042022',
     },
 ];
 

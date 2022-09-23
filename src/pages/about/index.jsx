@@ -111,7 +111,7 @@ function About() {
                                 <p className="about-story-desc">
                                     Depuis le plus jeune âge, le dessin a
                                     toujours été un moyen d'expression
-                                    privilègié pour exprimer mes idées. Après
+                                    privilégié pour exprimer mes idées. Après
                                     mes études d'Art à l'université, je me suis
                                     progressivement dirigé vers des techniques
                                     et des outils numériques. Concept Art et
@@ -158,7 +158,7 @@ function About() {
                                 <p className="about-story-desc">
                                     Fervant amateur de sciences et d'innovations
                                     technologiques, j'ai étudié la physique à
-                                    l'université jusqu'au Master. J'y ai fais la
+                                    l'université jusqu'au Master. J'y ai fait la
                                     découverte de la programmation et du calcul
                                     numérique via l'apprentissage du langage
                                     Python. Grand bricoleur dans l'âme et adepte

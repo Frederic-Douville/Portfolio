@@ -7,7 +7,7 @@ function Contact() {
             <div className="contact-ctn d-flex f-d-column j-c-flexStart a-i-center">
                 <div className="contact-pitch-ctn d-flex f-d-column j-c-center a-i-center">
                     <p className="contact-pitch-text">
-                        Contactez-moi à cette adresse email:{' '}
+                        Contactez-moi à cette adresse email :{' '}
                         <a
                             href="mailto:frederic.douville@zoho.eu"
                             className="contact-pitch-link"
@@ -25,8 +25,7 @@ function Contact() {
                             className="contact-pitch-link"
                         >
                             LinkedIn
-                        </a>{' '}
-                        directement.
+                        </a>
                     </p>
                 </div>
                 <div className="contact-drawing-ctn d-flex f-d-row j-c-spaceAround a-i-center">

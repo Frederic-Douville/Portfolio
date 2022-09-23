@@ -60,7 +60,7 @@ const projectsReferences = [
             },
         ],
         description:
-            "Dynamisation d'un site web avec des animations CSS pour une plateforme de réservation de restaurants gastronomique.",
+            "Dynamisation d'un site web avec des animations CSS pour une plateforme de réservation de restaurants gastronomiques.",
         githublink:
             'https://github.com/Frederic-Douville/FredericDouville_3_22062021',
         pagelink:

@@ -51,7 +51,7 @@ function CardDesktop({ datasArray }) {
                 />
                 <div className="cardDesktop-desc-pitch-ctn">
                     <p className="cardDesktop-desc-pitch-p">
-                        <span>Description:</span>{' '}
+                        <span>Description :</span>{' '}
                         {datasArray[projectId - 1].description}
                     </p>
                 </div>

@@ -1,14 +1,15 @@
 .header{
     &-main{
-        width:100%;
+        width:70%;
+        margin: auto;
         height: 150px;        
-        background-image: url('../assets/wood texture header LD.jpg');
+        background-image: url('../assets/header yellow textured.jpg');
         background-size:cover;
-        box-shadow:inset 0 -2.5px 5px rgba(0,0,0,0.4);
+        box-shadow: 0 5px 5px rgba(0,0,0,0.4);
         
     }
     &-ctn{
-    width: 70%;
+    width: 100%;
     height: 150px;
     margin: auto;
     font-family: 'Rubik-Bold';
@@ -26,10 +27,9 @@
             width:95px;
             height:95px;
             fill:$grey-dark;
-            filter:drop-shadow( 2.5px 2.5px 5px rgba(0,0,0,0.5));
             transition: all ease-in-out 0.5s;
             &:hover{
-                fill:white;
+                fill:$blue-medium;
                 transform:  scale(1.1);
             }
         }
@@ -115,9 +115,8 @@
         text-decoration: none;
         font-size: 25px;
         transition: color ease-in-out 300ms;
-        text-shadow: 2.5px 2.5px 7.5px rgba(0,0,0,0.5);
         &:hover{
-            color:white;            
+            color:$blue-medium;            
         }
         &-mobile{
             transition: color ease-in-out 300ms;
@@ -133,7 +132,7 @@
         filter:drop-shadow( 2.5px 2.5px 7.5px rgba(0,0,0,0.5));
         transition: transform ease-in-out 300ms, fill ease-in-out 300ms;
         &:hover{
-            fill:white;
+            fill:$blue-medium;
             transform:scale(1.2);
         }
     }
@@ -141,19 +140,24 @@
         width:50px;
         height:50px;
         fill:$grey-dark;
-        filter:drop-shadow( 2.5px 2.5px 7.5px rgba(0,0,0,0.5));
         display:none;
         cursor:pointer;
         margin-right: 15px;
         transition:transform ease-in-out 300ms, fill ease-in-out 300ms;
         &:hover{
-            fill:white;
+            fill:$blue-medium;
             transform: scale(1.05);
         }
     }
 }
 
 @media screen and (max-width:1400px){
+    .header{
+        &-main{
+            width:100%;
+            margin:none;
+        }
+    }
     .header{
         &-ctn{
             width:100%

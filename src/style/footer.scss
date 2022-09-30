@@ -1,9 +1,9 @@
 .footer{
     &-ctn{
-        width:100%;
+        width:70%;
+        margin: auto;
         height: 100px;
-        background: linear-gradient(180deg,$grey-light,$grey-dark);
-        
+        background-image: url('../assets/footer\ gray\ textured.jpg');
     }
     &-text{        
         font-size: 17.5px;
@@ -55,5 +55,14 @@
     }
     100%{
         translate: 0px 0px;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .footer{
+        &-ctn{
+            width:100%;
+            margin: none;
+        }
     }
 }

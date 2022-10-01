@@ -49,7 +49,10 @@ function Cv() {
                         <span className="cv-text-bold cv-text-blue cv-text-size">
                             Logiciels et applications :
                         </span>
-                        <p>Krita, Inkscape, Figma, Trello</p>
+                        <p>
+                            Photoshop, Illustrator, Krita, Inkscape, Figma,
+                            Trello, blender
+                        </p>
                     </div>
                     <div className="cv-softSkills-ctn">
                         <span className="cv-text-bold cv-text-blue cv-text-size">

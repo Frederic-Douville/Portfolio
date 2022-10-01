@@ -19,20 +19,20 @@ function Credits() {
                     Brush Vectors by Vecteezy
                 </a>
                 <a
-                    href="https://www.freepik.com/free-photo/striped-wood-texture_969030.htm#page=5&query=wood%20texture&position=1&from_view=search"
+                    href="https://www.freepik.com/free-photo/gray-concrete-wall-with-scratches_15474168.htm#query=beton&position=40&from_view=search"
                     target="_blank"
                     rel="noreferrer"
                     className="credits-link"
                 >
-                    Image by fwstudio on Freepik
+                    Image by rawpixel.com on Freepik
                 </a>{' '}
                 <a
-                    href="https://www.freepik.com/free-photo/paper-texture_1034631.htm?query=paper%20texture#position=14&query=paper%20texture"
+                    href="https://www.freepik.com/free-photo/creative-commons-0-paint-yellow-orange-cc0-texture_3220819.htm#page=2&query=yellow&position=22&from_view=search"
                     target="_blank"
                     rel="noreferrer"
                     className="credits-link"
                 >
-                    Image by kues1 on Freepik
+                    Image by rawpixel.com on Freepik
                 </a>{' '}
             </div>
         </div>

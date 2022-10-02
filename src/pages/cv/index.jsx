@@ -51,7 +51,7 @@ function Cv() {
                         </span>
                         <p>
                             Photoshop, Illustrator, Krita, Inkscape, Figma,
-                            Trello, blender
+                            Trello, Blender
                         </p>
                     </div>
                     <div className="cv-softSkills-ctn">

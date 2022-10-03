@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6be849f6.css",
-    "main.js": "/Portfolio/static/js/main.832ca5f2.js",
+    "main.css": "/Portfolio/static/css/main.7c0492b9.css",
+    "main.js": "/Portfolio/static/js/main.c0498648.js",
     "static/media/dessin pc.webp": "/Portfolio/static/media/dessin pc.13ad5b7f6b851269f3c6.webp",
     "static/media/dessin selfie.webp": "/Portfolio/static/media/dessin selfie.735c3f99d198c9596abd.webp",
     "static/media/dessin tablette graphique.webp": "/Portfolio/static/media/dessin tablette graphique.7143cc21645cfebae923.webp",
-    "static/media/footer gray textured.jpg": "/Portfolio/static/media/footer gray textured.e519f2c984b6ee6826e9.jpg",
+    "static/media/footer black textured.jpg": "/Portfolio/static/media/footer black textured.1f67782f5326100f574c.jpg",
     "static/media/header yellow textured.jpg": "/Portfolio/static/media/header yellow textured.2c9a575b63b026d5205e.jpg",
     "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
     "static/media/Rubik-Bold.ttf": "/Portfolio/static/media/Rubik-Bold.12b9f128a901a8977a57.ttf",
@@ -46,11 +46,11 @@
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.6be849f6.css.map": "/Portfolio/static/css/main.6be849f6.css.map",
-    "main.832ca5f2.js.map": "/Portfolio/static/js/main.832ca5f2.js.map"
+    "main.7c0492b9.css.map": "/Portfolio/static/css/main.7c0492b9.css.map",
+    "main.c0498648.js.map": "/Portfolio/static/js/main.c0498648.js.map"
   },
   "entrypoints": [
-    "static/css/main.6be849f6.css",
-    "static/js/main.832ca5f2.js"
+    "static/css/main.7c0492b9.css",
+    "static/js/main.c0498648.js"
   ]
 }

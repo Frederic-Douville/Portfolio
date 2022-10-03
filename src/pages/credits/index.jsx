@@ -19,13 +19,13 @@ function Credits() {
                     Brush Vectors by Vecteezy
                 </a>
                 <a
-                    href="https://www.freepik.com/free-photo/gray-concrete-wall-with-scratches_15474168.htm#query=beton&position=40&from_view=search"
+                    href="https://www.freepik.com/free-photo/slate-texture-background_4037913.htm#query=black%20textured&position=23&from_view=search"
                     target="_blank"
                     rel="noreferrer"
                     className="credits-link"
                 >
-                    Image by rawpixel.com on Freepik
-                </a>{' '}
+                    Image by denamorado on Freepik
+                </a>
                 <a
                     href="https://www.freepik.com/free-photo/creative-commons-0-paint-yellow-orange-cc0-texture_3220819.htm#page=2&query=yellow&position=22&from_view=search"
                     target="_blank"

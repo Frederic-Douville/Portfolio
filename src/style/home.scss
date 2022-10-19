@@ -1,6 +1,7 @@
 .home {
     &-ctn {
         width: 70%;
+        min-width: 1400px;
         margin: auto;
     }
 
@@ -79,7 +80,8 @@
 @media screen and (max-width:1400px) {
     .home {
         &-ctn {
-            width: 100%
+            width: 100%;
+            min-width: 0px;
         }
     }
 }

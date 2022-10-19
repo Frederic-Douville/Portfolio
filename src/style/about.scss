@@ -1,6 +1,7 @@
 .about{
     &-ctn{
         width:70%;
+        min-width: 1400px;
         margin:auto;
     }
     &-stories-ctn{
@@ -121,7 +122,8 @@
 @media screen and (max-width:1400px){
     .about{
         &-ctn{
-            width:100%
+            width:100%;
+            min-width: 0px;
         }
         &-stories-ctn{
             width:45%;                   

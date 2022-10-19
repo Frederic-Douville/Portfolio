@@ -7,11 +7,15 @@ function Cv() {
                         <span className="cv-text-bold cv-text-blue cv-text-size">
                             Langages:
                         </span>
-                        <p>HTML5, CSS3, JavaScript, Python</p>
+                        <p>HTML5, CSS3, JavaScript, Python, PHP</p>
                         <span className="cv-text-bold cv-text-blue cv-text-size">
-                            Framework et librairies:
+                            Librairies:
                         </span>
                         <p> React, Redux, Bootstrap, Sass</p>
+                        <span className="cv-text-bold cv-text-blue cv-text-size">
+                            CMS:
+                        </span>
+                        <p>WordPress</p>
                     </div>
                     <div className="cv-skill-ctn">
                         <span className="cv-text-bold cv-text-blue cv-text-size">
@@ -71,10 +75,17 @@ function Cv() {
                         </h2>
                         <p className="cv-text-justify">
                             <span className="cv-text-bold">
-                                Mai 2021 à Juin 2022 - Étudiant - OpenClassrooms
-                                – Paris
+                                Mai 2021 à Juin 2022 - Développeur en formation
+                                - OpenClassrooms – Paris
                             </span>
-                            <br /> Validation de projets professionnalisants
+                            <br /> Validation de projets professionnalisants:
+                            <br /> - Création de sites web dynamiques et
+                            accessibles.
+                            <br /> - Débogage et implémentation de tests
+                            unitaires et End-to-End.
+                            <br /> - Développement d'applications avec React,
+                            React Router et Redux.
+                            <br /> - Gestion de projet par méthodologie agile.
                         </p>
                         <p className="cv-text-justify">
                             <span className="cv-text-bold">

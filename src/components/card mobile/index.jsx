@@ -3,7 +3,7 @@ import { ReactComponent as GlobeIcon } from '../../assets/icones_svg/globe-solid
 
 function CardMobile({ datasArray }) {
     return (
-        <div className="cardMobile-main-ctn d-flex f-d-column a-i-center j-c-flexStart">
+        <div className="cardMobile-main-ctn unfocus d-flex f-d-column a-i-center j-c-flexStart">
             {datasArray.map(
                 ({
                     index,

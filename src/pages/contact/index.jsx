@@ -3,8 +3,8 @@ import MailLogo from '../../assets/dessins/logo mail.webp';
 
 function Contact() {
     return (
-        <div className="page d-flex f-d-column j-c-flexStart a-i-center">
-            <div className="contact-ctn d-flex f-d-column j-c-flexStart a-i-center">
+        <div className="page d-flex f-d-column j-c-center a-i-center">
+            <div className="contact-ctn unfocus d-flex f-d-column j-c-flexStart a-i-center">
                 <div className="contact-pitch-ctn d-flex f-d-column j-c-center a-i-center">
                     <p className="contact-pitch-text">
                         Contactez-moi à cette adresse email :{' '}

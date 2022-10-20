@@ -2,7 +2,8 @@
     &-ctn{
         width:70%;
         min-width:1400px;
-        margin-top: 155px;        
+        position:relative;
+            
     }
     &-pitch{
         &-ctn{
@@ -92,6 +93,7 @@
 
 @media screen and (max-width:1023px){
     .contact{
+        
         &-pitch{
             &-ctn{
                 font-size: 25px;

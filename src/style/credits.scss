@@ -1,6 +1,6 @@
 .credits{
     &-ctn{
-        margin-top:155px;
+        margin-top:50px;
         height:300px;
         animation: openCredits 2s both;
     }
@@ -10,6 +10,7 @@
         color:$grey-medium;
         font-size: 26px;
         transition:transform ease-in-out 300ms;
+        margin: 40px 0 40px 0;
         &:hover{
             color:$blue-medium;
             transform: scale(1.05);

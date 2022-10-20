@@ -35,7 +35,7 @@ function About() {
 
     return (
         <div className="page d-flex f-d-row j-c-center a-i-center">
-            <div className="about-ctn d-flex f-d-row j-c-center a-i-center">
+            <div className="about-ctn unfocus d-flex f-d-row j-c-center a-i-center">
                 <div className="about-stories-ctn d-flex f-d-column a-i-flexStart">
                     <div id="firstLine"></div>
                     <BrushLine className="about-line" />

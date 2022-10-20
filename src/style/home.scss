@@ -91,11 +91,12 @@
         &-ctn {
             width: 100%;
             flex-direction: column;
+            justify-content: flex-start;
         }
 
         &-intro-ctn {
             width: 90%;
-            margin-top: 155px;
+            margin-top: 5px;
         }
 
         &-titles-ctn {

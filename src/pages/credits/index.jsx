@@ -1,7 +1,7 @@
 function Credits() {
     return (
         <div className="page d-flex f-d-column j-c-flexStart a-i-center">
-            <div className="credits-ctn d-flex f-d-column j-c-spaceBetween a-i-center">
+            <div className="credits-ctn unfocus d-flex f-d-column j-c-spaceBetween a-i-center">
                 <a
                     href="https://fontawesome.com"
                     target="_blank"

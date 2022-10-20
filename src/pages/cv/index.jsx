@@ -1,7 +1,7 @@
 function Cv() {
     return (
         <div className="page d-flex f-d-column a-i-center j-c-center">
-            <div className="cv-ctn d-flex f-d-row a-i-flexStart j-c-center">
+            <div className="cv-ctn unfocus d-flex f-d-row a-i-flexStart j-c-center">
                 <div className="cv-skillTools-ctn">
                     <div className="cv-languages-ctn">
                         <span className="cv-text-bold cv-text-blue cv-text-size">

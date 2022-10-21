@@ -297,19 +297,19 @@
         fill:white;
         z-index: 1;;
         &-1{
-            width:125px;
+            width:100px;
+            left:35px;
         }
         &-2{
-            width:125px;
-            left:125px;
+            width:100px;
+            left:100px;
         }
         &-3{
-            width:125px;
-            left:225px;
+            width:100px;
+            left:200px;
         }
         &-4{
-            width:125px;
-            left:300px;
+            display: none;
         }
         &-5{
             width:75px;            

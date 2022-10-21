@@ -1,6 +1,14 @@
 import Portrait from '../../assets/dessins/dessin selfie.webp';
+import { useEffect } from 'react';
+import { useStore } from 'react-redux';
+import { dropDownMenuClosing } from '../../feature/dropDownMenu.js';
 
 function Home() {
+    const store = useStore();
+    useEffect(() => {
+        store.dispatch(dropDownMenuClosing());
+    });
+
     return (
         <div className="page d-flex f-d-row j-c-center a-i-center">
             <div className="home-ctn unfocus d-flex f-d-row j-c-center a-i-center">

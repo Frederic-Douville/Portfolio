@@ -1,4 +1,12 @@
+import { useEffect } from 'react';
+import { useStore } from 'react-redux';
+import { dropDownMenuClosing } from '../../feature/dropDownMenu.js';
+
 function Cv() {
+    const store = useStore();
+    useEffect(() => {
+        store.dispatch(dropDownMenuClosing());
+    });
     return (
         <div className="page d-flex f-d-column a-i-center j-c-center">
             <div className="cv-ctn unfocus d-flex f-d-row a-i-flexStart j-c-center">

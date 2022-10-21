@@ -1,4 +1,13 @@
+import { useEffect } from 'react';
+import { useStore } from 'react-redux';
+import { dropDownMenuClosing } from '../../feature/dropDownMenu.js';
+
 function Credits() {
+    const store = useStore();
+    useEffect(() => {
+        store.dispatch(dropDownMenuClosing());
+    });
+
     return (
         <div className="page d-flex f-d-column j-c-flexStart a-i-center">
             <div className="credits-ctn unfocus d-flex f-d-column j-c-spaceBetween a-i-center">

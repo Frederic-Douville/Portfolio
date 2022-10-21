@@ -13,7 +13,7 @@ function Footer() {
         document.getElementById('header').scrollIntoView(true);
     }
     return (
-        <div className="footer-ctn d-flex f-d-column j-c-center a-i-center">
+        <div className="footer-ctn unfocus d-flex f-d-column j-c-center a-i-center">
             <ul className="footer-nav-list d-flex f-d-row a-i-center j-c-spaceBetween">
                 <li className="footer-nav-elem-link">
                     <Link

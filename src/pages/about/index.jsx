@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useStore } from 'react-redux';
+import { dropDownMenuClosing } from '../../feature/dropDownMenu.js';
 import PrintDrawings from '../../components/print-drawings';
 import { ReactComponent as Plus } from '../../assets/icones_svg/plus-solid.svg';
 import { ReactComponent as Minus } from '../../assets/icones_svg/minus-solid.svg';
@@ -8,6 +10,10 @@ import drawingsTwo from '../../datas/drawingsTwo';
 import drawingsThree from '../../datas/drawingsThree';
 
 function About() {
+    const store = useStore();
+    useEffect(() => {
+        store.dispatch(dropDownMenuClosing());
+    });
     const [storyOne, setStoryOne] = useState(true);
     const [storyTwo, setStoryTwo] = useState(false);
     const [storyThree, setStoryThree] = useState(false);

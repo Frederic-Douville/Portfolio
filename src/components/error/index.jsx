@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useStore } from 'react-redux';
+import { dropDownMenuClosing } from '../../feature/dropDownMenu.js';
 
 function Error() {
+    const store = useStore();
+    useEffect(() => {
+        store.dispatch(dropDownMenuClosing());
+    });
     return (
         <div className="error-ctn page d-flex f-d-column j-c-flexStart a-i-center">
             <span className="error-nbr">404</span>

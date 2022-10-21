@@ -7,6 +7,7 @@
         background-image: url('../assets/header yellow textured.jpg');
         background-size:cover;
         background-repeat: no-repeat;
+        animation:openHeader 1s both;  
     }
     &-ctn{
     width: 100%;
@@ -14,20 +15,20 @@
     margin: auto;
     font-family: 'Rubik-Bold';
     position:relative;
-    animation:openHeader 1s both;     
+      
     }
     &-logo{
         &-ctn{
             width:110px;
             height:110px;
             margin-left: 10px;
-            border-radius: 50%; 
-            z-index: 5;               
+            border-radius: 50%;               
         }
         &-icon{
             width:95px;
             height:95px;
             fill:$grey-dark;
+            z-index: 25;
             transition: all ease-in-out 0.5s;
             &:hover{
                 fill:$blue-medium;
@@ -46,41 +47,63 @@
     }
 }
 
+@keyframes openHeader {
+    0%{
+        translate: 0px -150px;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+
+@keyframes dropMenuTranslation{
+    0%{
+        opacity:0;
+        translate: 0px -10px
+    }
+    40%{
+        opacity:1;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+
 .cloud{
     position:absolute;
     fill:white;
-    z-index: -1;;
+    z-index: 1;;
     &-1{
         top:5px;
         left:10px;
-        animation: 4s ease-in-out 0s infinite both cloudMovePattern1
+        animation: 5s ease-in-out 0s infinite both cloudMovePattern1
     }
     &-2{
         top:65px;
         left:150px;
-        animation: 4s ease-in-out 0.2s infinite both cloudMovePattern2
+        animation: 5s ease-in-out 0.4s infinite both cloudMovePattern2
     }
     &-3{
         top:20px;
         left:275px;
-        animation: 4s ease-in-out 0.4s infinite both cloudMovePattern1
+        animation: 5s ease-in-out 0.8s infinite both cloudMovePattern1
     }
     &-4{
         top:90px;
         left:400px;
-        animation: 4s ease-in-out 0.6s infinite both cloudMovePattern2
+        animation: 5s ease-in-out 1.2s infinite both cloudMovePattern2
     }
     &-5{
         width:75px;
         top:70px;
         left:10px;
-        animation: 4s ease-in-out 0.8s infinite both cloudMovePattern3
+        animation: 5s ease-in-out 1.6s infinite both cloudMovePattern3
     }
     &-6{
         width:50px;
         top:70px;
         left:330px;
-        animation: 4s ease-in-out 1s infinite both cloudMovePattern3
+        animation: 5s ease-in-out 2s infinite both cloudMovePattern3
     }
 }
 
@@ -129,32 +152,12 @@
     }
 }
 
-@keyframes openHeader {
-    0%{
-        translate: 0px -150px;
-    }
-    100%{
-        translate: 0px 0px;
-    }
-}
-
-@keyframes dropMenuTranslation{
-    0%{
-        opacity:0;
-        translate: 0px -10px
-    }
-    40%{
-        opacity:1;
-    }
-    100%{
-        translate: 0px 0px;
-    }
-}
 
 .nav{
     &-ctn{
         width:80%;
         max-width:900px;
+        z-index: 25;
         &-mobile{
             width:100%;
         }
@@ -189,15 +192,14 @@
         }        
         &-mobile{
             text-align: center;
-            justify-self: stretch;
-            padding: 80px 0 80px 0;
+            padding: 45px 0 45px 0;
             transition:transform ease-in-out 300ms;
                 &:hover{                    
                     transform: scale(1.05);
                 }
             &-icons{
                 width:250px;
-                padding: 80px 0 80px 0;
+                padding: 45px 0 45px 0;
                 
             }          
         }
@@ -238,6 +240,7 @@
         display:none;
         cursor:pointer;
         margin-right: 15px;
+        z-index: 26;
         transition:transform ease-in-out 300ms, fill ease-in-out 300ms;
         &:hover{
             fill:$blue-medium;

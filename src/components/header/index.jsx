@@ -1,4 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useStore, useSelector } from 'react-redux';
+import { selectDropDownMenu } from '../../utils/selector';
+import {
+    dropDownMenuClosing,
+    dropDownMenuChanging,
+    unfocusPage,
+} from '../../feature/dropDownMenu.js';
 import { ReactComponent as Cloud1 } from '../../assets/icones_svg/cloud1.svg';
 import { ReactComponent as Cloud2 } from '../../assets/icones_svg/cloud2.svg';
 import { ReactComponent as Cloud3 } from '../../assets/icones_svg/cloud3.svg';
@@ -11,37 +19,30 @@ import { ReactComponent as GitHubIcon } from '../../assets/icones_svg/github-bra
 import { ReactComponent as InstagramIcon } from '../../assets/icones_svg/instagram-brands.svg';
 import { ReactComponent as ThreeBars } from '../../assets/icones_svg/three_bars.svg';
 import { ReactComponent as BrushLine } from '../../assets/icones_svg/brush line thin.svg';
-import { useState } from 'react';
 
 function Header() {
-    const [dropIsOpen, setDropIsOpen] = useState(false);
-    const unfocusIsDrop = document.getElementsByClassName('unfocus');
-    window.addEventListener('resize', checkWindowSize);
+    const store = useStore();
+    const dropDownMenuState = useSelector(selectDropDownMenu).dropDownMenuState;
 
+    useEffect(() => {
+        unfocusPage(store);
+    });
+
+    window.addEventListener('resize', checkWindowSize);
     function checkWindowSize() {
         const width = window.innerWidth;
         if (width >= 1023) {
-            setDropIsOpen(false);
+            store.dispatch(dropDownMenuClosing());
         }
     }
 
     function openOrCloseDropDownMenu() {
-        return setDropIsOpen(!dropIsOpen);
+        return store.dispatch(dropDownMenuChanging());
     }
 
     function closeDropDownMenu() {
-        return setDropIsOpen(false);
+        return store.dispatch(dropDownMenuClosing());
     }
-
-    dropIsOpen === true
-        ? Array.prototype.forEach.call(
-              unfocusIsDrop,
-              (el) => (el.style.zIndex = '-1')
-          )
-        : Array.prototype.forEach.call(
-              unfocusIsDrop,
-              (el) => (el.style.zIndex = '1')
-          );
 
     return (
         <div
@@ -119,7 +120,7 @@ function Header() {
                         <ThreeBars className="nav-three-bars-icon" />
                     </div>
                 </nav>
-                {dropIsOpen ? (
+                {dropDownMenuState ? (
                     <div className="header-dropdown-menu-ctn d-flex a-i-center j-c-flexStart">
                         <nav className="nav-ctn-mobile d-flex f-d-column a-i-center j-c-flexStart">
                             <ul className="nav-list nav-list-mobile d-flex f-d-column a-i-center j-c-center">
@@ -127,7 +128,6 @@ function Header() {
                                     <Link
                                         to="/"
                                         className="nav-link nav-link-mobile"
-                                        onClick={closeDropDownMenu}
                                     >
                                         Accueil
                                     </Link>
@@ -137,7 +137,6 @@ function Header() {
                                     <Link
                                         to="/about"
                                         className="nav-link nav-link-mobile"
-                                        onClick={closeDropDownMenu}
                                     >
                                         A propos de moi
                                     </Link>
@@ -147,7 +146,6 @@ function Header() {
                                     <Link
                                         to="/projects"
                                         className="nav-link nav-link-mobile"
-                                        onClick={closeDropDownMenu}
                                     >
                                         Projets
                                     </Link>
@@ -157,7 +155,6 @@ function Header() {
                                     <Link
                                         to="/contact"
                                         className="nav-link nav-link-mobile"
-                                        onClick={closeDropDownMenu}
                                     >
                                         Contact
                                     </Link>
@@ -170,6 +167,7 @@ function Header() {
                                                 href="https://github.com/Frederic-Douville"
                                                 target="_blank"
                                                 rel="noreferrer"
+                                                onClick={closeDropDownMenu}
                                             >
                                                 <GitHubIcon className="nav-icon" />
                                             </a>
@@ -179,6 +177,7 @@ function Header() {
                                                 href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-douville-949217172/"
                                                 target="_blank"
                                                 rel="noreferrer"
+                                                onClick={closeDropDownMenu}
                                             >
                                                 <LinkedInIcon className="nav-icon" />
                                             </a>
@@ -188,12 +187,14 @@ function Header() {
                                                 href="https://www.instagram.com/fredoo_art/"
                                                 target="_blank"
                                                 rel="noreferrer"
+                                                onClick={closeDropDownMenu}
                                             >
                                                 <InstagramIcon className="nav-icon" />
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
+                                <BrushLine className="nav-elem-brushline" />
                             </ul>
                         </nav>
                     </div>

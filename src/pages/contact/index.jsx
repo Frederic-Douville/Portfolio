@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
+import { useStore } from 'react-redux';
+import { dropDownMenuClosing } from '../../feature/dropDownMenu.js';
 import LinkedInLogo from '../../assets/dessins/logo linkedin.webp';
 import MailLogo from '../../assets/dessins/logo mail.webp';
 
 function Contact() {
+    const store = useStore();
+    useEffect(() => {
+        store.dispatch(dropDownMenuClosing());
+    });
     return (
         <div className="page d-flex f-d-column j-c-center a-i-center">
             <div className="contact-ctn unfocus d-flex f-d-column j-c-flexStart a-i-center">

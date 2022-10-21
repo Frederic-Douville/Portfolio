@@ -42,6 +42,14 @@ function Credits() {
                 >
                     Nuage Vecteurs par Vecteezy
                 </a>
+                <a
+                    href="https://fr.vecteezy.com/vecteur-libre/arbre"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="credits-link"
+                >
+                    Arbre Vecteurs par Vecteezy
+                </a>
             </div>
         </div>
     );

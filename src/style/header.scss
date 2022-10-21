@@ -292,4 +292,31 @@
             display:block;
         }
     }
+    .cloud{
+        position:absolute;
+        fill:white;
+        z-index: 1;;
+        &-1{
+            width:125px;
+        }
+        &-2{
+            width:125px;
+            left:125px;
+        }
+        &-3{
+            width:125px;
+            left:225px;
+        }
+        &-4{
+            width:125px;
+            left:300px;
+        }
+        &-5{
+            width:75px;            
+        }
+        &-6{
+            width:50px;
+            left:250px;            
+        }
+    }
 }

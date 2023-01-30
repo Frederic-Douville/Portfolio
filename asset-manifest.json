@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e81aff93.css",
-    "main.js": "/Portfolio/static/js/main.6bf5b0f7.js",
+    "main.css": "/Portfolio/static/css/main.17837d1e.css",
+    "main.js": "/Portfolio/static/js/main.9d755198.js",
     "static/media/dessin pc.webp": "/Portfolio/static/media/dessin pc.13ad5b7f6b851269f3c6.webp",
     "static/media/dessin selfie.webp": "/Portfolio/static/media/dessin selfie.735c3f99d198c9596abd.webp",
     "static/media/dessin tablette graphique.webp": "/Portfolio/static/media/dessin tablette graphique.7143cc21645cfebae923.webp",
-    "static/media/header yellow textured.jpg": "/Portfolio/static/media/header yellow textured.2c9a575b63b026d5205e.jpg",
-    "static/media/footer grey textured.jpg": "/Portfolio/static/media/footer grey textured.62942e619bc3bd836b94.jpg",
     "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
     "static/media/Rubik-Bold.ttf": "/Portfolio/static/media/Rubik-Bold.12b9f128a901a8977a57.ttf",
     "static/media/brush line thin.svg": "/Portfolio/static/media/brush line thin.fccee203feb450d1ad8e54604599230a.svg",
@@ -17,24 +15,19 @@
     "static/media/logo react.webp": "/Portfolio/static/media/logo react.11b2f148c1e8136cc836.webp",
     "static/media/logo javascript.webp": "/Portfolio/static/media/logo javascript.a61b7a25ff6b16a7198f.webp",
     "static/media/logo sass.webp": "/Portfolio/static/media/logo sass.4edd9c5b2191bbf65939.webp",
-    "static/media/tree2.svg": "/Portfolio/static/media/tree2.b8175e091de9176434803fbc1ffc966c.svg",
     "static/media/dessin outils.webp": "/Portfolio/static/media/dessin outils.fa7577c540cf599208e3.webp",
     "static/media/logo css.webp": "/Portfolio/static/media/logo css.963734490dee5c05e6e6.webp",
     "static/media/logo redux.webp": "/Portfolio/static/media/logo redux.6b3397dea39e3f994cb7.webp",
     "static/media/logo Ai.webp": "/Portfolio/static/media/logo Ai.2ccc38c52400e61d5a74.webp",
     "static/media/logo Ps.webp": "/Portfolio/static/media/logo Ps.393e476da0f616db9736.webp",
     "static/media/logo krita.webp": "/Portfolio/static/media/logo krita.43c916649897d516f593.webp",
-    "static/media/tree5.svg": "/Portfolio/static/media/tree5.ede8ce7c0833ad03a300fdca857ac337.svg",
-    "static/media/tree4.svg": "/Portfolio/static/media/tree4.a2a8c78d5b6fc4302dcee1c588c39dcf.svg",
     "static/media/logo sciences.webp": "/Portfolio/static/media/logo sciences.4cf44cb5f2f72ecd4d3b.webp",
     "static/media/logo freecad.webp": "/Portfolio/static/media/logo freecad.d8caf997d8b61134f59f.webp",
     "static/media/logo python.webp": "/Portfolio/static/media/logo python.a5682ddf3893d43fba83.webp",
     "static/media/logo blender.webp": "/Portfolio/static/media/logo blender.597976be739668413b90.webp",
-    "static/media/tree1.svg": "/Portfolio/static/media/tree1.75e1746a26d8bae26bc8a227ed932249.svg",
     "static/media/logo linkedin.webp": "/Portfolio/static/media/logo linkedin.390cfe678cd646983e7e.webp",
     "static/media/logo inkscape.webp": "/Portfolio/static/media/logo inkscape.93ed7e769d105c5cf686.webp",
     "static/media/logo mail.webp": "/Portfolio/static/media/logo mail.1ff4b5ebd290f7e18788.webp",
-    "static/media/tree6.svg": "/Portfolio/static/media/tree6.bb5d5ac209c60ba86e1f2cac2554b8db.svg",
     "static/media/Argent bank.webp": "/Portfolio/static/media/Argent bank.4e1fcc4b49448c35e181.webp",
     "static/media/HRnet.webp": "/Portfolio/static/media/HRnet.01aba0522e088cc7a292.webp",
     "static/media/SportSee.webp": "/Portfolio/static/media/SportSee.ed02177768bccda564f9.webp",
@@ -57,11 +50,11 @@
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.e81aff93.css.map": "/Portfolio/static/css/main.e81aff93.css.map",
-    "main.6bf5b0f7.js.map": "/Portfolio/static/js/main.6bf5b0f7.js.map"
+    "main.17837d1e.css.map": "/Portfolio/static/css/main.17837d1e.css.map",
+    "main.9d755198.js.map": "/Portfolio/static/js/main.9d755198.js.map"
   },
   "entrypoints": [
-    "static/css/main.e81aff93.css",
-    "static/js/main.6bf5b0f7.js"
+    "static/css/main.17837d1e.css",
+    "static/js/main.9d755198.js"
   ]
 }

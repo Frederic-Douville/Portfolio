@@ -4,9 +4,7 @@
         min-width: 1400px;
         margin: auto;
         height: 150px;        
-        background-image: url('../assets/header yellow textured.jpg');
-        background-size:cover;
-        background-repeat: no-repeat;
+        background:linear-gradient(0deg,#faad1f,#ffd363);
         animation:openHeader 1s both;  
     }
     &-ctn{

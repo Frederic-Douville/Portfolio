@@ -14,10 +14,12 @@ function About() {
     useEffect(() => {
         store.dispatch(dropDownMenuClosing());
     });
+    //faire un seul useState, avec un objet de 3 keys:boolean
     const [storyOne, setStoryOne] = useState(true);
     const [storyTwo, setStoryTwo] = useState(false);
     const [storyThree, setStoryThree] = useState(false);
 
+    //faire une seule fonction avec props pour choisir quelle key va changer
     function openStoryOne() {
         setStoryOne(true);
         setStoryTwo(false);

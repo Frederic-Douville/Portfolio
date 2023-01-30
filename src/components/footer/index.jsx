@@ -1,12 +1,8 @@
 import { Link } from 'react-router-dom';
+import { ReactComponent as BrushLine } from '../../assets/icones_svg/brush line thin.svg';
 import { ReactComponent as LinkedInIcon } from '../../assets/icones_svg/linkedin-brands.svg';
 import { ReactComponent as GitHubIcon } from '../../assets/icones_svg/github-brands.svg';
 import { ReactComponent as InstagramIcon } from '../../assets/icones_svg/instagram-brands.svg';
-import { ReactComponent as Tree1 } from '../../assets/icones_svg/tree1.svg';
-import { ReactComponent as Tree2 } from '../../assets/icones_svg/tree2.svg';
-import { ReactComponent as Tree4 } from '../../assets/icones_svg/tree4.svg';
-import { ReactComponent as Tree5 } from '../../assets/icones_svg/tree5.svg';
-import { ReactComponent as Tree6 } from '../../assets/icones_svg/tree6.svg';
 
 function Footer() {
     function scrollToHeader() {
@@ -63,11 +59,6 @@ function Footer() {
             </ul>
 
             <span className="footer-text">&#169; 2022 Frédéric Douville</span>
-            <Tree1 className="tree tree-1" />
-            <Tree2 className="tree tree-2" />
-            <Tree4 className="tree tree-4" />
-            <Tree5 className="tree tree-5" />
-            <Tree6 className="tree tree-6" />
         </div>
     );
 }

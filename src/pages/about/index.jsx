@@ -14,30 +14,22 @@ function About() {
     useEffect(() => {
         store.dispatch(dropDownMenuClosing());
     });
-    //faire un seul useState, avec un objet de 3 keys:boolean
-    const [storyOne, setStoryOne] = useState(true);
-    const [storyTwo, setStoryTwo] = useState(false);
-    const [storyThree, setStoryThree] = useState(false);
 
-    //faire une seule fonction avec props pour choisir quelle key va changer
-    function openStoryOne() {
-        setStoryOne(true);
-        setStoryTwo(false);
-        setStoryThree(false);
-        document.getElementById('firstLine').scrollIntoView(true);
-    }
+    const [story, setStory] = useState({
+        storyOne: true,
+        storyTwo: false,
+        storyThree: false,
+    });
 
-    function openStoryTwo() {
-        setStoryOne(false);
-        setStoryTwo(true);
-        setStoryThree(false);
-        document.getElementById('firstLine').scrollIntoView(true);
-    }
-
-    function openStoryThree() {
-        setStoryOne(false);
-        setStoryTwo(false);
-        setStoryThree(true);
+    function openStory(event) {
+        let storyId = event.target.getAttribute('data-story');
+        if (storyId === '1') {
+            setStory({ storyOne: true, storyTwo: false, storyThree: false });
+        } else if (storyId === '2') {
+            setStory({ storyOne: false, storyTwo: true, storyThree: false });
+        } else if (storyId === '3') {
+            setStory({ storyOne: false, storyTwo: false, storyThree: true });
+        }
         document.getElementById('firstLine').scrollIntoView(true);
     }
 
@@ -51,11 +43,14 @@ function About() {
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
                             className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
-                                !storyOne ? 'about-story-ctn-title-notopen' : ''
+                                !story.storyOne
+                                    ? 'about-story-ctn-title-notopen'
+                                    : ''
                             }`}
-                            onClick={openStoryOne}
+                            data-story="1"
+                            onClick={openStory}
                         >
-                            {storyOne ? (
+                            {story.storyOne ? (
                                 <Minus className="about-story-icon about-story-icon-minus" />
                             ) : (
                                 <Plus className="about-story-icon" />
@@ -63,13 +58,16 @@ function About() {
 
                             <span
                                 className={`about-story-title ${
-                                    storyOne ? 'about-story-title-open' : ''
+                                    story.storyOne
+                                        ? 'about-story-title-open'
+                                        : ''
                                 }`}
+                                data-story="1"
                             >
                                 Developpement Web
                             </span>
                         </div>
-                        {storyOne ? (
+                        {story.storyOne && (
                             <div className="about-story-ctn-paragraphe">
                                 <p className="about-story-desc">
                                     Fasciné par internet et la programmation,
@@ -82,25 +80,28 @@ function About() {
                                     polyvalent sur des projets web.
                                 </p>
                             </div>
-                        ) : null}
-                        {storyOne ? (
+                        )}
+                        {story.storyOne && (
                             <div className="about-img-mobile">
                                 <PrintDrawings
                                     srcList={drawingsOne}
                                     classNameDiv={'drawings-ctn drawings-one'}
                                 />
                             </div>
-                        ) : null}
+                        )}
                     </div>
                     <BrushLine className="about-line" />
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
                             className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
-                                !storyTwo ? 'about-story-ctn-title-notopen' : ''
+                                !story.storyTwo
+                                    ? 'about-story-ctn-title-notopen'
+                                    : ''
                             }`}
-                            onClick={openStoryTwo}
+                            data-story="2"
+                            onClick={openStory}
                         >
-                            {storyTwo ? (
+                            {story.storyTwo ? (
                                 <Minus className="about-story-icon about-story-icon-minus" />
                             ) : (
                                 <Plus className="about-story-icon" />
@@ -108,13 +109,16 @@ function About() {
 
                             <span
                                 className={`about-story-title ${
-                                    storyTwo ? 'about-story-title-open' : ''
+                                    story.storyTwo
+                                        ? 'about-story-title-open'
+                                        : ''
                                 }`}
+                                data-story="2"
                             >
                                 Art, Dessin & digital painting
                             </span>
                         </div>
-                        {storyTwo ? (
+                        {story.storyTwo && (
                             <div className="about-story-ctn-paragraphe">
                                 <p className="about-story-desc">
                                     Depuis le plus jeune âge, le dessin a
@@ -127,27 +131,28 @@ function About() {
                                     satisfaisants.
                                 </p>
                             </div>
-                        ) : null}
-                        {storyTwo ? (
+                        )}
+                        {story.storyTwo && (
                             <div className="about-img-mobile">
                                 <PrintDrawings
                                     srcList={drawingsTwo}
                                     classNameDiv={'drawings-ctn drawings-two'}
                                 />
                             </div>
-                        ) : null}
+                        )}
                     </div>
                     <BrushLine className="about-line" />
                     <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
                         <div
                             className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
-                                !storyThree
+                                !story.storyThree
                                     ? 'about-story-ctn-title-notopen'
                                     : ''
                             }`}
-                            onClick={openStoryThree}
+                            data-story="3"
+                            onClick={openStory}
                         >
-                            {storyThree ? (
+                            {story.storyThree ? (
                                 <Minus className="about-story-icon about-story-icon-minus" />
                             ) : (
                                 <Plus className="about-story-icon" />
@@ -155,13 +160,16 @@ function About() {
 
                             <span
                                 className={`about-story-title ${
-                                    storyThree ? 'about-story-title-open' : ''
+                                    story.storyThree
+                                        ? 'about-story-title-open'
+                                        : ''
                                 }`}
+                                data-story="3"
                             >
                                 Sciences, Technologies & DIY
                             </span>
                         </div>
-                        {storyThree ? (
+                        {story.storyThree && (
                             <div className="about-story-ctn-paragraphe">
                                 <p className="about-story-desc">
                                     Fervant amateur de sciences et d'innovations
@@ -175,37 +183,37 @@ function About() {
                                     3D.
                                 </p>
                             </div>
-                        ) : null}
-                        {storyThree ? (
+                        )}
+                        {story.storyThree && (
                             <div className="about-img-mobile">
                                 <PrintDrawings
                                     srcList={drawingsThree}
                                     classNameDiv={'drawings-ctn drawings-three'}
                                 />
                             </div>
-                        ) : null}
+                        )}
                     </div>
                     <BrushLine className="about-line" />
                 </div>
                 <div className="about-img-ctn">
-                    {storyOne ? (
+                    {story.storyOne && (
                         <PrintDrawings
                             srcList={drawingsOne}
                             classNameDiv={'drawings-ctn drawings-one'}
                         />
-                    ) : null}
-                    {storyTwo ? (
+                    )}
+                    {story.storyTwo && (
                         <PrintDrawings
                             srcList={drawingsTwo}
                             classNameDiv={'drawings-ctn drawings-two'}
                         />
-                    ) : null}
-                    {storyThree ? (
+                    )}
+                    {story.storyThree && (
                         <PrintDrawings
                             srcList={drawingsThree}
                             classNameDiv={'drawings-ctn drawings-three'}
                         />
-                    ) : null}
+                    )}
                 </div>
             </div>
         </div>

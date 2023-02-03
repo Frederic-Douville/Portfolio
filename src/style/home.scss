@@ -1,20 +1,27 @@
 .home {
+    &-page{
+        @include flex_dlc(row,center,center);
+    }
     &-ctn {
+        @include flex_dlc(row,center,center);
         width: 70%;
         min-width: 1400px;
         margin: auto;
     }
 
     &-intro-ctn {
+        @include flex_dlc(row,center,flex-end);
         width: 45%;
         animation: openHomeIntro 2s both;
     }
 
     &-titles-ctn {
+        @include flex_dlc(column,flex-start,center);
         width: 90%;
     }
 
     &-img-ctn {
+        @include flex_dlc(row,center,center);
         width: 45%;
         animation: openHomePortrait 2s both;
     }

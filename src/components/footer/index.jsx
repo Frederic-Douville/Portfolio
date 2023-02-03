@@ -8,9 +8,10 @@ function Footer() {
     function scrollToHeader() {
         document.getElementById('header').scrollIntoView(true);
     }
+    //faire des tableaux comme pour le composant header
     return (
-        <div className="footer-ctn unfocus d-flex f-d-column j-c-center a-i-center">
-            <ul className="footer-nav-list d-flex f-d-row a-i-center j-c-spaceBetween">
+        <div className="footer-ctn unfocus">
+            <ul className="footer-nav-list">
                 <li className="footer-nav-elem-link">
                     <Link
                         to="/cv"

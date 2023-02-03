@@ -1,13 +1,14 @@
 .footer{
     &-ctn{
+        @include flex_dlc(column,center,center);
         width:70%;
         min-width: 1400px;
         margin: auto;
         height: 110px;
         background-size: cover;
         position: relative;
-        animation:openFooter 1s both;
-        border-top: 3px solid $blue-dark;
+        animation:openFooter 2s both;
+        border-top: 2px solid $blue-dark;
     }
     
     &-text{        
@@ -19,6 +20,7 @@
     
     &-nav{
         &-list{
+            @include flex_dlc(row,center,space-between);
             list-style: none;
             padding-left:0;
             width:60%;
@@ -73,8 +75,7 @@
 @media screen and (max-width:1023px){
     .footer{
         &-ctn{
-            justify-content: flex-start;
-            height: 220px;
+            justify-content: flex-start;            
         }
     }
     

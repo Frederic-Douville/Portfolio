@@ -10,9 +10,9 @@ function Contact() {
         store.dispatch(dropDownMenuClosing());
     });
     return (
-        <div className="page d-flex f-d-column j-c-center a-i-center">
-            <div className="contact-ctn unfocus d-flex f-d-column j-c-flexStart a-i-center">
-                <div className="contact-pitch-ctn d-flex f-d-column j-c-center a-i-center">
+        <div className="page contact-page">
+            <div className="contact-ctn unfocus">
+                <div className="contact-pitch-ctn">
                     <p className="contact-pitch-text">
                         Contactez-moi à cette adresse email :{' '}
                         <a
@@ -35,7 +35,7 @@ function Contact() {
                         </a>
                     </p>
                 </div>
-                <div className="contact-drawing-ctn d-flex f-d-row j-c-spaceAround a-i-center">
+                <div className="contact-drawing-ctn">
                     <img
                         src={MailLogo}
                         alt="mail logo"

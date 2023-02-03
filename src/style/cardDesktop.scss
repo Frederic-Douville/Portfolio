@@ -1,5 +1,6 @@
 .cardDesktop{
     &-ctn{
+        @include flex_dlc(row,flex-start,center);
         width:70%;
         min-width: 1400px;
         margin-top: 180px;
@@ -17,6 +18,7 @@
     }
       
     &-card{
+        @include flex_dlc(row,center,center);
         width:90%;
         height: 90%;
         justify-self: center;
@@ -39,11 +41,13 @@
     }
     &-desc{
         &-ctn{
+            @include flex_dlc(column,center,space-between);
             width:50%;
             min-height: 700px;                       
         }
         &-title{
             &-ctn{
+                @include flex_dlc(column,center,space-between);
                 width:100%;
             }
             &-h1{
@@ -58,6 +62,7 @@
             }
         }
         &-languagesCtn{
+            @include flex_dlc(row,center,center);
             width:100%;
             flex-wrap: wrap;
         }
@@ -67,6 +72,7 @@
             margin-left: 20px;
         }
         &-link-ctn{
+            @include flex_dlc(row,center,space-around);
             width:100%;
         }
         &-pitch{
@@ -84,6 +90,7 @@
     }
     
     &-link{
+        @include flex_dlc(row,center,center);
         text-decoration: none;
         color: $grey-medium;
         margin: 5px 0 5px 0;

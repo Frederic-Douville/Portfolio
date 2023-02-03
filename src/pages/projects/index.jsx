@@ -10,7 +10,7 @@ function Projects() {
         store.dispatch(dropDownMenuClosing());
     });
     return (
-        <div className="page projects-ctn d-flex  f-d-row j-c-center a-i-flexStart">
+        <div className="page projects-ctn">
             <CardMobile datasArray={projectsReferences} />
             <CardDesktop datasArray={projectsReferences} />
         </div>

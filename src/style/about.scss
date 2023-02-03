@@ -1,14 +1,19 @@
 .about{
+    &-page{
+        @include flex_dlc(row,center,center)
+    }
     &-ctn{
+        @include flex_dlc(row,center,center);
         width:70%;
         min-width: 1400px;
         margin:auto;
     }
     &-stories-ctn{
-       width:50%;
-       min-height:700px;
-       justify-content: space-between; 
-       animation:openAllDesc 2s both;  
+        @include flex_dlc(column,flex-start,center);
+        width:50%;
+        min-height:700px;
+        justify-content: space-between; 
+        animation:openAllDesc 2s both;  
     }
     &-img-ctn{
         width:50%;
@@ -26,8 +31,10 @@
     }
     &-story{
         &-ctn{
+            @include flex_dlc(column,flex-start,center);
             width:100%;            
             &-title{
+                @include flex_dlc(row,center,flex-start);
                 width:100%;
                 min-width: 420px;
                 height: 60px;

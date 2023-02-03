@@ -9,7 +9,7 @@ function Error() {
         store.dispatch(dropDownMenuClosing());
     });
     return (
-        <div className="error-ctn page d-flex f-d-column j-c-flexStart a-i-center">
+        <div className="error-ctn page">
             <span className="error-nbr">404</span>
             <span className="error-pitch">Cette page n'existe pas !</span>
             <Link to="/" className="error-link">

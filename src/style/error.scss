@@ -1,6 +1,6 @@
 .error{
     &-ctn{
-
+        @include flex_dlc(column,center,flex-start);
     }
     &-nbr{
         margin: 155px 0 50px 0;

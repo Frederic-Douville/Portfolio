@@ -1,2 +1,4 @@
-
+.projects-ctn{
+    @include flex_dlc(row,flex-start,center);
+}
 

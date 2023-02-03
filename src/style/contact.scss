@@ -1,12 +1,16 @@
 .contact{
+    &-page{
+        @include flex_dlc(column,center,center);
+    }
     &-ctn{
+        @include flex_dlc(column,center,flex-start);
         width:70%;
         min-width:1400px;
-        position:relative;
-            
+        position:relative;            
     }
     &-pitch{
         &-ctn{
+            @include flex_dlc(column,center,center);
             font-size: 30px;
             animation:openContact 2s both;
         }
@@ -23,6 +27,7 @@
     }
     &-drawing{
         &-ctn{
+            @include flex_dlc(row,center,space-around);
             width:100%;
             margin-top: 25px;
             animation: openImgContact 0.8s both;

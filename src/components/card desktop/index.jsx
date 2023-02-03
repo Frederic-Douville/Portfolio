@@ -10,17 +10,16 @@ function CardDesktop({ datasArray }) {
         var id = event.target.getAttribute('data-id');
         const descCtn = document.getElementById('project-desc');
         descCtn.classList.remove('desc-animation');
-        void descCtn.offsetWidth;
-        descCtn.classList.add('desc-animation');
+        setTimeout(() => descCtn.classList.add('desc-animation'), 0);
         setProjectId(id);
     }
-    /**essayer avec setTimeout(() => descCtn.classList.add('desc-animation'),0) et enlever void descCtn.offsetWidth */
+
     return (
-        <div className="cardDesktop-ctn d-flex f-d-row j-c-center a-i-flexStart">
+        <div className="cardDesktop-ctn">
             <div className="cardDesktop-cards-ctn ">
                 {datasArray.map(({ index, id, title, image }) => (
                     <div
-                        className="cardDesktop-card  d-flex f-d-row j-c-center a-i-center"
+                        className="cardDesktop-card"
                         key={`desktop-${title}-${index}`}
                         data-id={id}
                         onClick={printCardDescription}
@@ -35,19 +34,17 @@ function CardDesktop({ datasArray }) {
                 ))}
             </div>
             <div
-                className="cardDesktop-desc-ctn desc-animation d-flex f-d-column j-c-spaceBetween a-i-center"
+                className="cardDesktop-desc-ctn desc-animation"
                 id={`project-desc`}
             >
-                <div className="cardDesktop-desc-title-ctn d-flex f-d-column j-c-spaceBetween a-i-center">
+                <div className="cardDesktop-desc-title-ctn">
                     <h1 className="cardDesktop-desc-title-h1">
                         {datasArray[projectId - 1].title}
                     </h1>
                 </div>
                 <PrintDrawings
                     srcList={datasArray[projectId - 1].languages}
-                    classNameDiv={
-                        'cardDesktop-desc-languagesCtn d-flex f-d-row j-c-center a-i-center'
-                    }
+                    classNameDiv={'cardDesktop-desc-languagesCtn'}
                 />
                 <div className="cardDesktop-desc-pitch-ctn">
                     <p className="cardDesktop-desc-pitch-p">
@@ -55,12 +52,12 @@ function CardDesktop({ datasArray }) {
                         {datasArray[projectId - 1].description}
                     </p>
                 </div>
-                <div className="cardDesktop-desc-link-ctn d-flex f-d-row j-c-spaceAround a-i-center">
+                <div className="cardDesktop-desc-link-ctn">
                     <a
                         href={datasArray[projectId - 1].githublink}
                         target="_blank"
                         rel="noreferrer"
-                        className="cardDesktop-link cardDesktop-githublink d-flex a-i-center"
+                        className="cardDesktop-link cardDesktop-githublink"
                     >
                         <GithubIcon className="cardDesktop-link-icon cardDesktop-githublink-icon" />
                         <span className="cardDesktop-link-text">
@@ -72,7 +69,7 @@ function CardDesktop({ datasArray }) {
                             href={datasArray[projectId - 1].pagelink}
                             target="_blank"
                             rel="noreferrer"
-                            className="cardDesktop-link cardDesktop-pagelink d-flex a-i-center"
+                            className="cardDesktop-link cardDesktop-pagelink"
                         >
                             <GlobeIcon className="cardDesktop-link-icon cardDesktop-pagelink-icon" />
                             <span className="cardDesktop-link-text">

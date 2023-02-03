@@ -27,22 +27,21 @@ function About() {
             setStory({ storyOne: true, storyTwo: false, storyThree: false });
         } else if (storyId === '2') {
             setStory({ storyOne: false, storyTwo: true, storyThree: false });
-        } else if (storyId === '3') {
+        } else {
             setStory({ storyOne: false, storyTwo: false, storyThree: true });
         }
         document.getElementById('firstLine').scrollIntoView(true);
     }
 
     return (
-        <div className="page d-flex f-d-row j-c-center a-i-center">
-            <div className="about-ctn unfocus d-flex f-d-row j-c-center a-i-center">
-                <div className="about-stories-ctn d-flex f-d-column a-i-flexStart">
+        <div className="page about-page">
+            <div className="about-ctn unfocus">
+                <div className="about-stories-ctn">
                     <div id="firstLine"></div>
                     <BrushLine className="about-line" />
-
-                    <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
+                    <div className="about-story-ctn">
                         <div
-                            className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
+                            className={`about-story-ctn-title ${
                                 !story.storyOne
                                     ? 'about-story-ctn-title-notopen'
                                     : ''
@@ -55,7 +54,6 @@ function About() {
                             ) : (
                                 <Plus className="about-story-icon" />
                             )}
-
                             <span
                                 className={`about-story-title ${
                                     story.storyOne
@@ -91,9 +89,9 @@ function About() {
                         )}
                     </div>
                     <BrushLine className="about-line" />
-                    <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
+                    <div className="about-story-ctn">
                         <div
-                            className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
+                            className={`about-story-ctn-title ${
                                 !story.storyTwo
                                     ? 'about-story-ctn-title-notopen'
                                     : ''
@@ -142,9 +140,9 @@ function About() {
                         )}
                     </div>
                     <BrushLine className="about-line" />
-                    <div className="about-story-ctn d-flex f-d-column j-c-center a-i-flexStart">
+                    <div className="about-story-ctn">
                         <div
-                            className={`about-story-ctn-title d-flex f-d-row j-c-flexStart a-i-center ${
+                            className={`about-story-ctn-title ${
                                 !story.storyThree
                                     ? 'about-story-ctn-title-notopen'
                                     : ''

@@ -1,5 +1,9 @@
 .credits{
+    &-page{
+        @include flex_dlc(column,center,flex-start);
+    }
     &-ctn{
+        @include flex_dlc(column,center,space-between);
         margin-top:50px;
         height:300px;
         animation: openCredits 2s both;

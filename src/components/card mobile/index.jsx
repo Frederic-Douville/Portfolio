@@ -3,7 +3,7 @@ import { ReactComponent as GlobeIcon } from '../../assets/icones_svg/globe-solid
 
 function CardMobile({ datasArray }) {
     return (
-        <div className="cardMobile-main-ctn unfocus d-flex f-d-column a-i-center j-c-flexStart">
+        <div className="cardMobile-main-ctn unfocus">
             {datasArray.map(
                 ({
                     index,
@@ -15,9 +15,9 @@ function CardMobile({ datasArray }) {
                 }) => (
                     <div
                         key={`mobile-${title}-${index}`}
-                        className="cardMobile-ctn d-flex f-d-column j-c-spaceAround a-i-center"
+                        className="cardMobile-ctn"
                     >
-                        <div className="cardMobile-img-ctn d-flex j-c-center a-i-center">
+                        <div className="cardMobile-img-ctn">
                             <img src={image} alt={`logo-${title}`} />
                         </div>
                         <p className="cardMobile-desc">{description}</p>
@@ -26,7 +26,7 @@ function CardMobile({ datasArray }) {
                                 href={githublink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="cardMobile-link cardMobile-githublink d-flex a-i-center "
+                                className="cardMobile-link cardMobile-githublink"
                             >
                                 <GithubIcon className="cardMobile-link-icon cardMobile-githublink-icon" />
                                 <span className="cardMobile-link-text">
@@ -38,7 +38,7 @@ function CardMobile({ datasArray }) {
                                     href={pagelink}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="cardMobile-link cardMobile-pagelink d-flex a-i-center"
+                                    className="cardMobile-link cardMobile-pagelink"
                                 >
                                     <GlobeIcon className="cardMobile-link-icon cardMobile-pagelink-icon" />
                                     <span className="cardMobile-link-text">

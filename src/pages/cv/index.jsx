@@ -8,8 +8,8 @@ function Cv() {
         store.dispatch(dropDownMenuClosing());
     });
     return (
-        <div className="page d-flex f-d-column a-i-center j-c-center">
-            <div className="cv-ctn unfocus d-flex f-d-row a-i-flexStart j-c-center">
+        <div className="page cv-page">
+            <div className="cv-ctn unfocus">
                 <div className="cv-skillTools-ctn">
                     <div className="cv-languages-ctn">
                         <span className="cv-text-bold cv-text-blue cv-text-size">
@@ -76,7 +76,7 @@ function Cv() {
                         </p>
                     </div>
                 </div>
-                <div className="cv-experiencesStudies-ctn d-flex f-d-column j-c-flexStart a-i-center">
+                <div className="cv-experiencesStudies-ctn">
                     <div className="cv-experiences-ctn">
                         <h2 className="cv-experiences-h2 cv-text-blue">
                             Expériences professionnelles

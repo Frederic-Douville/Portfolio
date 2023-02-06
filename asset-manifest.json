@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.27e69cef.css",
-    "main.js": "/Portfolio/static/js/main.17017249.js",
+    "main.css": "/Portfolio/static/css/main.f5064b55.css",
+    "main.js": "/Portfolio/static/js/main.a32f1414.js",
     "static/media/dessin pc.webp": "/Portfolio/static/media/dessin pc.13ad5b7f6b851269f3c6.webp",
     "static/media/dessin selfie.webp": "/Portfolio/static/media/dessin selfie.735c3f99d198c9596abd.webp",
     "static/media/dessin tablette graphique.webp": "/Portfolio/static/media/dessin tablette graphique.7143cc21645cfebae923.webp",
@@ -27,9 +27,11 @@
     "static/media/logo blender.webp": "/Portfolio/static/media/logo blender.597976be739668413b90.webp",
     "static/media/logo linkedin.webp": "/Portfolio/static/media/logo linkedin.390cfe678cd646983e7e.webp",
     "static/media/logo inkscape.webp": "/Portfolio/static/media/logo inkscape.93ed7e769d105c5cf686.webp",
+    "static/media/OpenC-icon.png": "/Portfolio/static/media/OpenC-icon.8dd8cea62f940eac552b.png",
     "static/media/logo mail.webp": "/Portfolio/static/media/logo mail.1ff4b5ebd290f7e18788.webp",
     "static/media/Argent bank.webp": "/Portfolio/static/media/Argent bank.4e1fcc4b49448c35e181.webp",
     "static/media/HRnet.webp": "/Portfolio/static/media/HRnet.01aba0522e088cc7a292.webp",
+    "static/media/SP-icon.png": "/Portfolio/static/media/SP-icon.6efef189dcc40fd1c034.png",
     "static/media/SportSee.webp": "/Portfolio/static/media/SportSee.ed02177768bccda564f9.webp",
     "static/media/LesPetitsPlats.webp": "/Portfolio/static/media/LesPetitsPlats.028e72ad4af7d52658d7.webp",
     "static/media/Reservia.webp": "/Portfolio/static/media/Reservia.34b61b4dacdb139e6ad5.webp",
@@ -50,11 +52,11 @@
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.27e69cef.css.map": "/Portfolio/static/css/main.27e69cef.css.map",
-    "main.17017249.js.map": "/Portfolio/static/js/main.17017249.js.map"
+    "main.f5064b55.css.map": "/Portfolio/static/css/main.f5064b55.css.map",
+    "main.a32f1414.js.map": "/Portfolio/static/js/main.a32f1414.js.map"
   },
   "entrypoints": [
-    "static/css/main.27e69cef.css",
-    "static/js/main.17017249.js"
+    "static/css/main.f5064b55.css",
+    "static/js/main.a32f1414.js"
   ]
 }

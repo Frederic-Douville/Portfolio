@@ -19,6 +19,7 @@ const projectsReferences = [
         id: 1,
         title: 'Reservia',
         image: ReserviaLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -42,6 +43,7 @@ const projectsReferences = [
         id: 2,
         title: 'OhMyfood',
         image: OhMyFoodLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -70,6 +72,7 @@ const projectsReferences = [
         id: 3,
         title: 'GameOn',
         image: GameOnLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -98,6 +101,7 @@ const projectsReferences = [
         id: 4,
         title: 'FishEye',
         image: FishEyeLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -131,6 +135,7 @@ const projectsReferences = [
         id: 5,
         title: 'Les petits plats',
         image: LesPetisPlatsLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -159,6 +164,7 @@ const projectsReferences = [
         id: 6,
         title: 'Kasa',
         image: KasaLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -192,6 +198,7 @@ const projectsReferences = [
         id: 7,
         title: 'SportSee',
         image: SportSeeLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -225,6 +232,7 @@ const projectsReferences = [
         id: 8,
         title: 'Argent Bank',
         image: ArgentBank,
+        project: 'OC',
         languages: [
             {
                 src: Html,
@@ -262,6 +270,7 @@ const projectsReferences = [
         id: 9,
         title: 'HRnet',
         image: HRnetLogo,
+        project: 'OC',
         languages: [
             {
                 src: Html,

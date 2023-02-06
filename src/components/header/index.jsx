@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useStore, useSelector } from 'react-redux';
 import { selectDropDownMenu } from '../../utils/selector';
@@ -21,24 +21,28 @@ import { ReactComponent as ThreeBars } from '../../assets/icones_svg/three_bars.
 import { ReactComponent as BrushLine } from '../../assets/icones_svg/brush line thin.svg';
 
 function Header() {
+    const location = useLocation().pathname;
     const store = useStore();
     const dropDownMenuState = useSelector(selectDropDownMenu).dropDownMenuState;
     const headerLinks = [
-        { title: 'Accueil', route: '/' },
-        { title: 'À propos de moi', route: '/about' },
-        { title: 'Projets', route: '/projects' },
-        { title: 'Contact', route: '/contact' },
+        { index: 0, title: 'Accueil', route: '/' },
+        { index: 1, title: 'À propos de moi', route: '/about' },
+        { index: 2, title: 'Projets', route: '/projects' },
+        { index: 3, title: 'Contact', route: '/contact' },
     ];
     const headerIcons = [
         {
+            index: 0,
             icon: <GitHubIcon className="nav-icon" />,
             route: 'https://github.com/Frederic-Douville',
         },
         {
+            index: 1,
             icon: <LinkedInIcon className="nav-icon" />,
             route: 'https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-douville-949217172/',
         },
         {
+            index: 2,
             icon: <InstagramIcon className="nav-icon" />,
             route: 'https://www.instagram.com/fredoo_art/',
         },
@@ -82,7 +86,9 @@ function Header() {
                     <ul className="nav-list nav-list-desktop">
                         {headerLinks.map(({ index, title, route }) => (
                             <li
-                                className="nav-elem-desktop"
+                                className={`nav-elem-desktop ${
+                                    location === route ? 'nav-elem-select' : ''
+                                }`}
                                 key={`header-${title}-${index}`}
                             >
                                 <Link to={route} className="nav-link">
@@ -92,7 +98,7 @@ function Header() {
                         ))}
                     </ul>
                     <ul className="nav-list nav-list-icon">
-                        {headerIcons.map(({ index, icon, route }) => (
+                        {headerIcons.map(({ icon, route, index }) => (
                             <li
                                 className="nav-elem-icon"
                                 key={`header-icon-${index}`}

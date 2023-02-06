@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { ReactComponent as GithubIcon } from '../../assets/icones_svg/github-brands.svg';
 import { ReactComponent as GlobeIcon } from '../../assets/icones_svg/globe-solid.svg';
+import OCIcon from '../../assets/logos/OpenC-icon.png';
+import SPIcon from '../../assets/logos/SP-icon.png';
 import PrintDrawings from '../print-drawings';
 
 function CardDesktop({ datasArray }) {
@@ -17,10 +19,10 @@ function CardDesktop({ datasArray }) {
     return (
         <div className="cardDesktop-ctn">
             <div className="cardDesktop-cards-ctn ">
-                {datasArray.map(({ index, id, title, image }) => (
+                {datasArray.map(({ id, title, image, project }) => (
                     <div
                         className="cardDesktop-card"
-                        key={`desktop-${title}-${index}`}
+                        key={`desktop-${title}-${id}`}
                         data-id={id}
                         onClick={printCardDescription}
                     >
@@ -30,6 +32,21 @@ function CardDesktop({ datasArray }) {
                             alt={`logo-${title}`}
                             data-id={id}
                         />
+                        {project === 'OC' ? (
+                            <img
+                                className="cardDesktop-card-icon"
+                                src={OCIcon}
+                                alt="OpenClassrooms Icon"
+                                data-id={id}
+                            />
+                        ) : (
+                            <img
+                                className="cardDesktop-card-icon"
+                                src={SPIcon}
+                                alt="Side project Icon"
+                                data-id={id}
+                            />
+                        )}
                     </div>
                 ))}
             </div>

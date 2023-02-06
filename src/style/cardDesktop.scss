@@ -19,6 +19,7 @@
       
     &-card{
         @include flex_dlc(row,center,center);
+        position: relative;
         width:90%;
         height: 90%;
         justify-self: center;
@@ -32,11 +33,23 @@
             width:80%;
             transition:transform ease-in-out 300ms;
         }
+        &-icon{
+            position: absolute;
+            opacity: 0.4;
+            top:10px;
+            right:10px;
+            width:25px;
+            height:25px;
+            transition: opacity ease-in-out 300ms;
+        }        
         &:hover{
             box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
             .cardDesktop-card-img{
                 transform: scale(1.1);
             }
+            .cardDesktop-card-icon{
+               opacity: 1;
+            }            
         }       
     }
     &-desc{

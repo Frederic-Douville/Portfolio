@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f5064b55.css",
-    "main.js": "/Portfolio/static/js/main.a32f1414.js",
+    "main.css": "/Portfolio/static/css/main.b3e2cbec.css",
+    "main.js": "/Portfolio/static/js/main.2fc68b55.js",
     "static/media/dessin pc.webp": "/Portfolio/static/media/dessin pc.13ad5b7f6b851269f3c6.webp",
     "static/media/dessin selfie.webp": "/Portfolio/static/media/dessin selfie.735c3f99d198c9596abd.webp",
     "static/media/dessin tablette graphique.webp": "/Portfolio/static/media/dessin tablette graphique.7143cc21645cfebae923.webp",
     "static/media/NunitoSans-Regular.ttf": "/Portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
+    "static/media/Rubik-Regular.ttf": "/Portfolio/static/media/Rubik-Regular.974ab100afa4538622da.ttf",
     "static/media/Rubik-Bold.ttf": "/Portfolio/static/media/Rubik-Bold.12b9f128a901a8977a57.ttf",
     "static/media/brush line thin.svg": "/Portfolio/static/media/brush line thin.fccee203feb450d1ad8e54604599230a.svg",
     "static/media/three_bars.svg": "/Portfolio/static/media/three_bars.a3e96731bf8327d2b737752100c43554.svg",
@@ -34,6 +35,7 @@
     "static/media/SP-icon.png": "/Portfolio/static/media/SP-icon.6efef189dcc40fd1c034.png",
     "static/media/SportSee.webp": "/Portfolio/static/media/SportSee.ed02177768bccda564f9.webp",
     "static/media/LesPetitsPlats.webp": "/Portfolio/static/media/LesPetitsPlats.028e72ad4af7d52658d7.webp",
+    "static/media/wave-header.svg": "/Portfolio/static/media/wave-header.9c8073fc9cf63c9bed12a75793356234.svg",
     "static/media/Reservia.webp": "/Portfolio/static/media/Reservia.34b61b4dacdb139e6ad5.webp",
     "static/media/cloud3.svg": "/Portfolio/static/media/cloud3.03b5c7934769d0714f28017fc599fb39.svg",
     "static/media/cloud4.svg": "/Portfolio/static/media/cloud4.7a440e00a8958f2de116cd990dc951ec.svg",
@@ -52,11 +54,11 @@
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.f5064b55.css.map": "/Portfolio/static/css/main.f5064b55.css.map",
-    "main.a32f1414.js.map": "/Portfolio/static/js/main.a32f1414.js.map"
+    "main.b3e2cbec.css.map": "/Portfolio/static/css/main.b3e2cbec.css.map",
+    "main.2fc68b55.js.map": "/Portfolio/static/js/main.2fc68b55.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5064b55.css",
-    "static/js/main.a32f1414.js"
+    "static/css/main.b3e2cbec.css",
+    "static/js/main.2fc68b55.js"
   ]
 }

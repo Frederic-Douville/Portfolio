@@ -1,7 +1,7 @@
 .footer{
     &-ctn{
         @include flex_dlc(column,center,center);
-        width:70%;
+        width:60%;
         min-width: 1400px;
         margin: auto;
         height: 110px;
@@ -72,11 +72,3 @@
     }
 }
 
-@media screen and (max-width:1023px){
-    .footer{
-        &-ctn{
-            justify-content: flex-start;            
-        }
-    }
-    
-}

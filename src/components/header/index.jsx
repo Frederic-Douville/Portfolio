@@ -7,6 +7,7 @@ import {
     dropDownMenuChanging,
     unfocusPage,
 } from '../../feature/dropDownMenu.js';
+import { ReactComponent as Wave } from '../../assets/icones_svg/wave-header.svg';
 import { ReactComponent as Cloud1 } from '../../assets/icones_svg/cloud1.svg';
 import { ReactComponent as Cloud2 } from '../../assets/icones_svg/cloud2.svg';
 import { ReactComponent as Cloud3 } from '../../assets/icones_svg/cloud3.svg';
@@ -70,6 +71,7 @@ function Header() {
 
     return (
         <div className="header-main" id="header">
+            <Wave className="wave" />
             <div className="header-ctn">
                 <Cloud1 className="cloud cloud-1" />
                 <Cloud2 className="cloud cloud-2" />
@@ -91,7 +93,14 @@ function Header() {
                                 }`}
                                 key={`header-${title}-${index}`}
                             >
-                                <Link to={route} className="nav-link">
+                                <Link
+                                    to={route}
+                                    className={`nav-link ${
+                                        location === route
+                                            ? 'nav-link-select'
+                                            : ''
+                                    }`}
+                                >
                                     {title}
                                 </Link>
                             </li>

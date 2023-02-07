@@ -1,6 +1,8 @@
 .error{
     &-ctn{
         @include flex_dlc(column,center,flex-start);
+        width:60%;
+        min-width: 1400px;
     }
     &-nbr{
         margin: 155px 0 50px 0;

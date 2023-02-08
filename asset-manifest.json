@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b3e2cbec.css",
-    "main.js": "/Portfolio/static/js/main.2fc68b55.js",
+    "main.css": "/Portfolio/static/css/main.72caf04b.css",
+    "main.js": "/Portfolio/static/js/main.a64427f0.js",
     "static/media/dessin pc.webp": "/Portfolio/static/media/dessin pc.13ad5b7f6b851269f3c6.webp",
     "static/media/dessin selfie.webp": "/Portfolio/static/media/dessin selfie.735c3f99d198c9596abd.webp",
     "static/media/dessin tablette graphique.webp": "/Portfolio/static/media/dessin tablette graphique.7143cc21645cfebae923.webp",
@@ -54,11 +54,11 @@
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
     "static/media/plus-solid.svg": "/Portfolio/static/media/plus-solid.9cb64da8d5d133117c196e72e46c55c8.svg",
     "static/media/minus-solid.svg": "/Portfolio/static/media/minus-solid.e02164612a98c21a0c9840637bb7472e.svg",
-    "main.b3e2cbec.css.map": "/Portfolio/static/css/main.b3e2cbec.css.map",
-    "main.2fc68b55.js.map": "/Portfolio/static/js/main.2fc68b55.js.map"
+    "main.72caf04b.css.map": "/Portfolio/static/css/main.72caf04b.css.map",
+    "main.a64427f0.js.map": "/Portfolio/static/js/main.a64427f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3e2cbec.css",
-    "static/js/main.2fc68b55.js"
+    "static/css/main.72caf04b.css",
+    "static/js/main.a64427f0.js"
   ]
 }

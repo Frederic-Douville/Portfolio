@@ -7,7 +7,6 @@
         height: 110px;
         background-size: cover;
         position: relative;
-        animation:openFooter 2s both;
         border-top: 2px solid $blue-dark;
     }
     
@@ -51,16 +50,6 @@
         }
     }
 }
-
-@keyframes openFooter {
-    0%{
-        translate: 0px 100px;
-    }
-    100%{
-        translate: 0px 0px;
-    }
-}
-
 
 @media screen and (max-width:1400px){
     .footer{

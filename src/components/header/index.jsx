@@ -79,10 +79,11 @@ function Header() {
                 <Cloud4 className="cloud cloud-4" />
                 <Cloud5 className="cloud cloud-5" />
                 <Cloud6 className="cloud cloud-6" />
-                <a href="https://Frederic-Douville.github.io/Portfolio">
-                    <div className="header-logo-ctn">
-                        <LogoHeader className="header-logo-icon" />
-                    </div>
+                <a
+                    href="https://Frederic-Douville.github.io/Portfolio"
+                    className="header-logo-link"
+                >
+                    <LogoHeader className="header-logo-icon" />
                 </a>
                 <nav className="nav-ctn">
                     <ul className="nav-list nav-list-desktop">

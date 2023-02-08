@@ -226,9 +226,15 @@
 
 
 @media screen and (max-width:1023px){
-    .drawings-ctn{
-        min-height:500px;
+    .drawings{
+        &-ctn{
+            min-height:500px;
+        }
+        &-three{
+            grid-template-rows:repeat(3,1fr) 40px;
+        }
     }
+    
     .logo{
         &-one{
             max-width:100px;

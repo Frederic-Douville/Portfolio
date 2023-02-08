@@ -15,6 +15,24 @@ function About() {
         store.dispatch(dropDownMenuClosing());
     });
 
+    const aboutContent = [
+        {
+            title: 'Développement Web',
+            description:
+                "Imprégné de culture internet et fasciné par la programmation, j'ai entrepris une reconversion professionelle dans la conception de sites et d'applications web. Actuellement développeur Front End, je me suis spécialisé en React et je souhaite évoluer vers le développement Full Stack.",
+        },
+        {
+            title: 'Dessin, art numérique & 3D',
+            description:
+                "Depuis toujours, le dessin a toujours été un moyen d'expression privilégié pour exprimer mes idées. Après mes études d'Art à l'université, je me suis progressivement dirigé vers des techniques et des outils numériques. Concept Art, digital painting et création 3D sont devenus des hobbies satisfaisants.",
+        },
+        {
+            title: 'Sciences, Technologies & DIY',
+            description:
+                "Amateur de sciences et d'innovations technologiques, j'ai étudié la physique à l'université jusqu'au Master. J'y ai fait la découverte de la programmation et du calcul numérique via l'apprentissage du langage Python. Grand bricoleur dans l'âme et adepte du DIY, j'adore modéliser et imprimer des pièces en 3D.",
+        },
+    ];
+
     const [story, setStory] = useState({
         storyOne: true,
         storyTwo: false,
@@ -38,7 +56,7 @@ function About() {
             <div className="about-ctn unfocus">
                 <div className="about-stories-ctn">
                     <div id="firstLine"></div>
-                    <BrushLine className="about-line" />
+                    {/* <BrushLine className="about-line" /> */}
                     <div className="about-story-ctn">
                         <div
                             className={`about-story-ctn-title ${
@@ -62,20 +80,13 @@ function About() {
                                 }`}
                                 data-story="1"
                             >
-                                Developpement Web
+                                {aboutContent[0].title}
                             </span>
                         </div>
                         {story.storyOne && (
                             <div className="about-story-ctn-paragraphe">
                                 <p className="about-story-desc">
-                                    Fasciné par internet et la programmation,
-                                    j'ai entrepris de me reconvertir dans la
-                                    conception de sites et d'applications web.
-                                    Actuellement développeur Front End, je me
-                                    suis spécialisé en React. Par la suite, je
-                                    souhaite évoluer, à moyen terme, vers le
-                                    développement Full Stack afin d'être
-                                    polyvalent sur des projets web.
+                                    {aboutContent[0].description}
                                 </p>
                             </div>
                         )}
@@ -113,20 +124,13 @@ function About() {
                                 }`}
                                 data-story="2"
                             >
-                                Art, Dessin & digital painting
+                                {aboutContent[1].title}
                             </span>
                         </div>
                         {story.storyTwo && (
                             <div className="about-story-ctn-paragraphe">
                                 <p className="about-story-desc">
-                                    Depuis le plus jeune âge, le dessin a
-                                    toujours été un moyen d'expression
-                                    privilégié pour exprimer mes idées. Après
-                                    mes études d'Art à l'université, je me suis
-                                    progressivement dirigé vers des techniques
-                                    et des outils numériques. Concept Art et
-                                    digital painting sont devenus des hobbies
-                                    satisfaisants.
+                                    {aboutContent[1].description}
                                 </p>
                             </div>
                         )}
@@ -164,21 +168,13 @@ function About() {
                                 }`}
                                 data-story="3"
                             >
-                                Sciences, Technologies & DIY
+                                {aboutContent[2].title}
                             </span>
                         </div>
                         {story.storyThree && (
                             <div className="about-story-ctn-paragraphe">
                                 <p className="about-story-desc">
-                                    Fervant amateur de sciences et d'innovations
-                                    technologiques, j'ai étudié la physique à
-                                    l'université jusqu'au Master. J'y ai fait la
-                                    découverte de la programmation et du calcul
-                                    numérique via l'apprentissage du langage
-                                    Python. Grand bricoleur dans l'âme et adepte
-                                    du DIY, j'adore créer ou réparer des objets
-                                    en modélisant et en imprimant des pièces en
-                                    3D.
+                                    {aboutContent[2].description}
                                 </p>
                             </div>
                         )}
@@ -191,7 +187,7 @@ function About() {
                             </div>
                         )}
                     </div>
-                    <BrushLine className="about-line" />
+                    {/* <BrushLine className="about-line" /> */}
                 </div>
                 <div className="about-img-ctn">
                     {story.storyOne && (

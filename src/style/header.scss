@@ -259,7 +259,8 @@
     .cloud{
         position:absolute;
         fill:white;
-        z-index: 1;;
+        z-index: 1;
+        animation: none;
         &-1{
             width:75px;
             top:160px;

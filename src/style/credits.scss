@@ -36,3 +36,16 @@
         translate: 0px 0px;     
     } 
 }
+
+@media screen and (max-width:1400px){
+    .credits{
+        &-page{
+            width:100%;
+            min-width: 0px;
+        }
+    }
+}
+
+@media screen and (max-width:1023px){
+    
+}

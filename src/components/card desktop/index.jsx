@@ -6,7 +6,7 @@ import SPIcon from '../../assets/logos/SP-icon.png';
 import PrintDrawings from '../print-drawings';
 
 function CardDesktop({ datasArray }) {
-    const [projectId, setProjectId] = useState(1);
+    const [projectId, setProjectId] = useState(0);
 
     function printCardDescription(event) {
         var id = event.target.getAttribute('data-id');
@@ -19,32 +19,32 @@ function CardDesktop({ datasArray }) {
     return (
         <div className="cardDesktop-ctn">
             <div className="cardDesktop-cards-ctn ">
-                {datasArray.map(({ id, title, image, project }) => (
+                {datasArray.map((elem, index) => (
                     <div
                         className="cardDesktop-card"
-                        key={`desktop-${title}-${id}`}
-                        data-id={id}
+                        key={`desktop-${elem.title}-${index}`}
+                        data-id={index}
                         onClick={printCardDescription}
                     >
                         <img
-                            className="cardDesktop-card-img"
-                            src={image}
-                            alt={`logo-${title}`}
-                            data-id={id}
+                            className={`cardDesktop-card-img cardDesktop-card-img-${elem.title}`}
+                            src={elem.image}
+                            alt={`logo-${elem.title}`}
+                            data-id={index}
                         />
-                        {project === 'OC' ? (
+                        {elem.project === 'OC' ? (
                             <img
                                 className="cardDesktop-card-icon"
                                 src={OCIcon}
                                 alt="OpenClassrooms Icon"
-                                data-id={id}
+                                data-id={index}
                             />
                         ) : (
                             <img
                                 className="cardDesktop-card-icon"
                                 src={SPIcon}
                                 alt="Side project Icon"
-                                data-id={id}
+                                data-id={index}
                             />
                         )}
                     </div>
@@ -56,22 +56,22 @@ function CardDesktop({ datasArray }) {
             >
                 <div className="cardDesktop-desc-title-ctn">
                     <h1 className="cardDesktop-desc-title-h1">
-                        {datasArray[projectId - 1].title}
+                        {datasArray[projectId].title}
                     </h1>
                 </div>
                 <PrintDrawings
-                    srcList={datasArray[projectId - 1].languages}
+                    srcList={datasArray[projectId].languages}
                     classNameDiv={'cardDesktop-desc-languagesCtn'}
                 />
                 <div className="cardDesktop-desc-pitch-ctn">
                     <p className="cardDesktop-desc-pitch-p">
                         <span>Description :</span>{' '}
-                        {datasArray[projectId - 1].description}
+                        {datasArray[projectId].description}
                     </p>
                 </div>
                 <div className="cardDesktop-desc-link-ctn">
                     <a
-                        href={datasArray[projectId - 1].githublink}
+                        href={datasArray[projectId].githublink}
                         target="_blank"
                         rel="noreferrer"
                         className="cardDesktop-link cardDesktop-githublink"
@@ -81,9 +81,9 @@ function CardDesktop({ datasArray }) {
                             Repository
                         </span>
                     </a>
-                    {datasArray[projectId - 1].pagelink !== '' ? (
+                    {datasArray[projectId].pagelink !== '' ? (
                         <a
-                            href={datasArray[projectId - 1].pagelink}
+                            href={datasArray[projectId].pagelink}
                             target="_blank"
                             rel="noreferrer"
                             className="cardDesktop-link cardDesktop-pagelink"

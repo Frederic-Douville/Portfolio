@@ -9,7 +9,7 @@
             width:50%;
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
             min-height: 700px;
             height:700px;
             animation:openProjectCards 2s both;            
@@ -31,6 +31,9 @@
         &-img{
             width:80%;
             transition:transform ease-in-out 300ms;
+            &-SolarSys{
+                width:65%;
+            }
         }
         &-icon{
             position: absolute;

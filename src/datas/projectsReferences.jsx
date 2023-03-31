@@ -7,6 +7,7 @@ import KasaLogo from '../assets/logos/Kasa.webp';
 import SportSeeLogo from '../assets/logos/SportSee.webp';
 import ArgentBank from '../assets/logos/Argent bank.webp';
 import HRnetLogo from '../assets/logos/HRnet.webp';
+import SolarSysLogo from '../assets/logos/SolarSys.webp';
 import Html from '../assets/dessins/logo html.webp';
 import Css from '../assets/dessins/logo css.webp';
 import Javascript from '../assets/dessins/logo javascript.webp';
@@ -16,7 +17,6 @@ import Redux from '../assets/dessins/logo redux.webp';
 
 const projectsReferences = [
     {
-        id: 1,
         title: 'Reservia',
         image: ReserviaLogo,
         project: 'OC',
@@ -40,7 +40,6 @@ const projectsReferences = [
             'https://frederic-douville.github.io/FredericDouville_2_14052021/',
     },
     {
-        id: 2,
         title: 'OhMyfood',
         image: OhMyFoodLogo,
         project: 'OC',
@@ -69,7 +68,6 @@ const projectsReferences = [
             'https://frederic-douville.github.io/FredericDouville_3_22062021/',
     },
     {
-        id: 3,
         title: 'GameOn',
         image: GameOnLogo,
         project: 'OC',
@@ -98,7 +96,6 @@ const projectsReferences = [
             'https://frederic-douville.github.io/FredericDouville_4_27062021',
     },
     {
-        id: 4,
         title: 'FishEye',
         image: FishEyeLogo,
         project: 'OC',
@@ -132,7 +129,6 @@ const projectsReferences = [
             'https://frederic-douville.github.io/FredericDouville_6_06092021/',
     },
     {
-        id: 5,
         title: 'Les petits plats',
         image: LesPetisPlatsLogo,
         project: 'OC',
@@ -161,7 +157,6 @@ const projectsReferences = [
             'https://frederic-douville.github.io/FredericDouville_7_16102021/',
     },
     {
-        id: 6,
         title: 'Kasa',
         image: KasaLogo,
         project: 'OC',
@@ -195,7 +190,6 @@ const projectsReferences = [
             'https://Frederic-Douville.github.io/FredericDouville_11_25012022',
     },
     {
-        id: 7,
         title: 'SportSee',
         image: SportSeeLogo,
         project: 'OC',
@@ -229,7 +223,6 @@ const projectsReferences = [
             'https://Frederic-Douville.github.io/FredericDouville_12_22022022',
     },
     {
-        id: 8,
         title: 'Argent Bank',
         image: ArgentBank,
         project: 'OC',
@@ -267,7 +260,6 @@ const projectsReferences = [
         pagelink: '',
     },
     {
-        id: 9,
         title: 'HRnet',
         image: HRnetLogo,
         project: 'OC',
@@ -309,6 +301,42 @@ const projectsReferences = [
             'https://github.com/Frederic-Douville/FredericDouville_14_26042022',
         pagelink:
             'https://Frederic-Douville.github.io/FredericDouville_14_26042022',
+    },
+    {
+        title: 'SolarSys',
+        image: SolarSysLogo,
+        project: 'SP',
+        languages: [
+            {
+                src: Html,
+                alt: 'html logo',
+                className: 'cardDesktop-desc-languages',
+            },
+            {
+                src: Css,
+                alt: 'css logo',
+                className: 'cardDesktop-desc-languages',
+            },
+            {
+                src: Sass,
+                alt: 'sass logo',
+                className: 'cardDesktop-desc-languages',
+            },
+            {
+                src: Javascript,
+                alt: 'javascript logo',
+                className: 'cardDesktop-desc-languages',
+            },
+            {
+                src: React,
+                alt: 'react logo',
+                className: 'cardDesktop-desc-languages',
+            },
+        ],
+        description:
+            "Application sur les principaux astres de notre système solaire basé sur l'API le-systeme-solaire.net.",
+        githublink: 'https://github.com/Frederic-Douville/solarsys',
+        pagelink: 'https://frederic-douville.github.io/solarsys',
     },
 ];
 
